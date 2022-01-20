@@ -1,15 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { Main } from '../styles';
+import Loading from "./loading/Loading";
+import About from "./About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <Header /> */}
-        {/* Snippet */}
-        {/* <Footer /> */}
-      </header>
-    </div>
+    <Main>
+      <Loading />
+      <About />
+      {/* <Header /> */}
+      {/* Snippet */}
+      {/* <Footer /> */}
+    </Main>
   );
 }
 
