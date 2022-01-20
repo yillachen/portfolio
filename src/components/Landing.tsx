@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import IPage from '../interface/page';
 import { Main } from "../styles";
-import About from "./About";
 
-function Landing() {
+const Landing: React.FunctionComponent<IPage> = props => {
+  useEffect(() => {
+
+  }, [])
 
   return (
     <Main>
-      {/* <Header />
-      <Footer /> */}
+      This is the homepage.
     </Main>
   );
 }

@@ -1,7 +1,8 @@
 import React from "react";
+import IPage from '../interface/page'
 import { AboutFlex, Column, List, H2, AboutH2, H3 } from "../styles";
 
-function About() {
+const About: React.FunctionComponent<IPage> = props => {
   return (
     <>
       <div>

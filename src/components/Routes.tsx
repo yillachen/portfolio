@@ -1,16 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Header, H1 } from "../styles";
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  RouteComponentProps,
+} from "react-router-dom";
+import routes from "../config/routes";
 
-function Heading() {
+const Routes: React.FunctionComponent<{}> = (props) => {
   return (
-    <Header>
-      <H1>Yilla Chen</H1>
-      About
-      Projects
-      {/* <Link to="/about">About</Link> */}
-    </Header>
+    <BrowserRouter>
+      <Switch>
+        {routes.map((route, index) => {
+          return (
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              render={(props: RouteComponentProps<any>) => (
+                <route.component
+                  name={route.name}
+                  {...props}
+                  {...route.props}
+                />
+              )}
+            />
+          );
+        })}
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
-export default Heading;
+export default Routes;
