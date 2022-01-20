@@ -1,32 +1,39 @@
 import React from "react";
-import { AboutFlex, List, SkillList, H2, H3 } from "../styles";
+import { AboutFlex, Column, List, H2, AboutH2, H3 } from "../styles";
 
 function About() {
   return (
-    <div className="App">
+    <>
       <div>
         <H2>
-          Nice to e-meet you, my name is Yilla. I am a marketing manager turned
-          motivated, forward-thinking Full Stack Engineer. I'm passionate about
-          creating impactful intuitive applications and moderizing technology so
-          it's accessible for everyone.
+          Nice to e-meet you! My name is Yilla and I'm a motivated, forward-thinking Full Stack Engineer, born and raised in Brooklyn.
+          I'm passionate about creating impactful intuitive applications and moderizing technology so it's accessible for everyone.
         </H2>
         <H3>
-          I'm also a skin science nerd (I'm a licensed esthetician, too!), and
+          Before coding, I was a Marketing Manager, focusing on skincare and SaaS. I'm also a skin science nerd (I'm a licensed esthetician, too!), and
           love DIY home projects.
         </H3>
       </div>
 
-      <H2>Contact</H2>
-      <H3>Email</H3>
-      <p>chn.yilla@gmail.com</p>
-      <H3>Based in</H3>
-      <p>Brooklyn, NY</p>
+      <AboutFlex>
+        <AboutH2>Contact</AboutH2>
+
+        <Column>
+          <List>
+            <H3>Email</H3>
+            <li>chn.yilla@gmail.com</li>
+          </List>
+          <List>
+            <H3>Based in</H3>
+            <li>Brooklyn, NY</li>
+          </List>
+        </Column>
+      </AboutFlex>
 
       <AboutFlex>
-        <H2>Skills</H2>
+        <AboutH2>Skills</AboutH2>
 
-        <SkillList>
+        <Column>
           <List>
             <H3>Proficient</H3>
             <li>HTML5 / CSS3</li>
@@ -39,6 +46,7 @@ function About() {
             <li>Styled Components</li>
             <li>MaterialUI</li>
           </List>
+
           <List>
             <H3>Learning</H3>
             <li>TypeScript</li>
@@ -46,9 +54,9 @@ function About() {
             <li>Vue</li>
             <li>Python</li>
           </List>
-        </SkillList>
+        </Column>
       </AboutFlex>
-    </div>
+    </>
   );
 }
 
