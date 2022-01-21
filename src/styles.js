@@ -11,9 +11,16 @@ export const Colors = {
 const { lavender, navy, green, red } = Colors;
 
 export const Main = styled.div`
-  margin: 50px;
+  margin: 0 50px 0 50px;
   font-size: 18px;
 `;
+
+export const Body = styled.div`
+  height: 70vH;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  padding: 0 15px 0 0;
+`
 
 export const AboutFlex = styled.div`
   display: flex;
@@ -49,6 +56,14 @@ export const Header = styled.div`
   margin-bottom: 25px;
 `;
 
+export const BottomBar = styled.div`
+  display: flex;
+  height: 5vH;
+  border-top: 1px solid ${lavender};
+  padding-top: 25px;
+  margin-top: 25px;
+`
+
 export const H2 = styled.h2`
   color: ${navy};
   font-weight: normal;
@@ -76,3 +91,8 @@ export const H3 = styled.h3`
   font-weight: normal;
   color: ${red};
 `;
+
+export const NavLink = styled.div`
+  padding: 0 15px 0 0;
+`
+
