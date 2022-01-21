@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import IPage from '../interface/page';
 import { Main } from "../styles";
@@ -6,8 +6,7 @@ import { Main } from "../styles";
 const Landing: React.FunctionComponent<IPage> = props => {
   return (
     <Main>
-      This is the homepage.<br />
-      <Link to="/about">About</Link>
+      This is the homepage.
     </Main>
   );
 }

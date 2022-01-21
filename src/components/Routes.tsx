@@ -6,10 +6,12 @@ import {
   RouteComponentProps,
 } from "react-router-dom";
 import routes from "../config/routes";
+import Navbar from "./Navbar";
 
 const Routes: React.FunctionComponent<{}> = (props) => {
   return (
     <BrowserRouter>
+      <Navbar name={""} />
       <Switch>
         {routes.map((route, index) => {
           return (

@@ -6,10 +6,9 @@ import { Header, H1 } from "../styles";
 const Heading: React.FunctionComponent<IPage> = props => {
   return (
     <Header>
-      <H1>Yilla Chen</H1>
-
-      Projects
-      {/* <Link to="/about">About</Link> */}
+      <Link to="/"><H1>Yilla Chen</H1></Link>
+      <Link to="/about">About</Link>
+      <Link to="/projects">Projects</Link>
     </Header>
   );
 }

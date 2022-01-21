@@ -1,5 +1,5 @@
-import { Project } from "paper/dist/paper-core";
 import About from "../components/About";
+import Projects from '../components/Projects';
 import Landing from "../components/Landing";
 import IRoute from "../interface/route";
 
@@ -19,7 +19,7 @@ const routes: IRoute[] = [
   {
     path: "/projects",
     name: "Projects",
-    component: Project,
+    component: Projects,
     exact: true,
   },
 ];

@@ -1,13 +1,11 @@
 import React from "react";
 import { Main } from "../styles";
-import Routes from './Routes'
-import Navbar from "./Navbar";
+import Routes from "./Routes";
+import IPage from "../interface/page";
 
-function App() {
-
+const App: React.FunctionComponent<IPage> = props => {
   return (
     <Main>
-      <Navbar name={""} />
       <Routes />
     </Main>
   );

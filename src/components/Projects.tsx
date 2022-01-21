@@ -1,14 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Projects() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        {/* Scroll Magic */}
-
-      </header>
-    </div>
-  );
+  return <div className="App">{/* Scroll Magic */}</div>;
 }
 
 export default Projects;
