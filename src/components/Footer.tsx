@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import IPage from "../interface/page";
-import { BottomBar, H1, Column, NavLink } from "../styles";
+import { BottomBar, NavLink } from "../styles";
 
 const Footer: React.FunctionComponent<IPage> = (props) => {
   return (
