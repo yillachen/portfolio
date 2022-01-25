@@ -1,5 +1,6 @@
 import About from "../components/About";
-import Projects from '../components/Projects';
+import Projects from "../components/Projects";
+import Test from '../components/Test'
 import IRoute from "../interface/route";
 
 const routes: IRoute[] = [
@@ -19,6 +20,12 @@ const routes: IRoute[] = [
     path: "/projects",
     name: "Projects",
     component: Projects,
+    exact: true,
+  },
+  {
+    path: "/test",
+    name: "Test",
+    component: Test,
     exact: true,
   },
 ];

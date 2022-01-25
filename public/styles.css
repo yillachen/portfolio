@@ -83,3 +83,12 @@ h3 > a {
     font-size: 15px;
   }
 }
+
+/* Scroll Magic Test */
+.panel {
+  height: 100%;
+  width: 100%;
+}
+.panel.green {
+  margin-bottom: 400px;
+}

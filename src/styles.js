@@ -9,38 +9,38 @@ import TiemposItalic from "../src/fonts/TiemposFineItalic.woff";
 import TiemposItalic2 from "../src/fonts/TiemposFineItalic.woff2";
 
 export default createGlobalStyle`
-    @font-face {
-      font-family: 'Basis Grotesque';
-      src: local('Basis Grotesque'), local('Basis Grotesque'),
-      url(${Basis2}) format('woff2'),
-      url(${Basis}) format('woff');
-      font-style: normal;
-      font-weight: 300;
-    },
-    @font-face {
-      font-family: 'Roboto Mono';
-      src: local('Roboto Mono'), local('Roboto Mono'),
-      url(${RobotoMono2}) format('woff2'),
-      url(${RobotoMono}) format('woff');
-      font-style: normal;
-      font-weight: 300;
-    },
-    @font-face {
-      font-family: 'Tiempos Fine';
-      src: local('Tiempos Fine'), local('Tiempos Fine'),
-      url(${Tiempos2}) format('woff2'),
-      url(${Tiempos}) format('woff');
-      font-style: normal;
-      font-weight: 300;
-    },
-    @font-face {
-      font-family: 'Tiempos Fine';
-      src: local('Tiempos Fine'), local('Tiempos Fine'),
-      url(${TiemposItalic2}) format('woff2'),
-      url(${TiemposItalic}) format('woff');
-      font-style: italic;
-      font-weight: 300;
-    }
+  @font-face {
+    font-family: 'Basis Grotesque';
+    src: local('Basis Grotesque'), local('Basis Grotesque'),
+    url(${Basis2}) format('woff2'),
+    url(${Basis}) format('woff');
+    font-style: normal;
+    font-weight: 300;
+  },
+  @font-face {
+    font-family: 'Roboto Mono';
+    src: local('Roboto Mono'), local('Roboto Mono'),
+    url(${RobotoMono2}) format('woff2'),
+    url(${RobotoMono}) format('woff');
+    font-style: normal;
+    font-weight: 300;
+  },
+  @font-face {
+    font-family: 'Tiempos Fine';
+    src: local('Tiempos Fine'), local('Tiempos Fine'),
+    url(${Tiempos2}) format('woff2'),
+    url(${Tiempos}) format('woff');
+    font-style: normal;
+    font-weight: 300;
+  },
+  @font-face {
+    font-family: 'Tiempos Fine';
+    src: local('Tiempos Fine'), local('Tiempos Fine'),
+    url(${TiemposItalic2}) format('woff2'),
+    url(${TiemposItalic}) format('woff');
+    font-style: italic;
+    font-weight: 300;
+  }
 `;
 
 // Branded Colors

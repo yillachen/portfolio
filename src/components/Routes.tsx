@@ -13,7 +13,6 @@ import { Body } from '../styles'
 const Routes: React.FunctionComponent<{}> = (props) => {
   return (
     <BrowserRouter>
-
       <Navbar name={"Navbar"} />
       <Body>
         <Switch>
