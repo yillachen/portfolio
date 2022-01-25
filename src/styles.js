@@ -56,12 +56,12 @@ const { lavender, navy, green, red } = Colors;
 export const Main = styled.div`
   margin: 0 50px 0 50px;
   font-size: 18px;
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
   font-style: normal;
 `;
 
 export const Body = styled.div`
-  height: 70vh;
+  height: 68vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
   padding: 0 15px 0 0;
@@ -91,30 +91,34 @@ export const List = styled.ul`
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  height: 10vh;
+  align-content: center;
+  align-items: center;
+  height: 8vh;
   width: 100%;
   color: ${navy};
-  border-bottom: 1px solid ${lavender};
-  padding-bottom: 25px;
+  border-bottom: 1px solid ${green};
+  padding: 25px 0 15px 0;
   margin-bottom: 25px;
+`;
+
+export const BottomLinks = styled.div`
+  display: flex;
 `;
 
 export const BottomBar = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
   height: 5vh;
-  border-top: 1px solid ${lavender};
+  border-top: 1px solid ${green};
   padding-top: 25px;
   margin-top: 25px;
-`;
-
-export const AboutH2 = styled.h2`
-  color: ${navy};
-  font-weight: normal;
-  font-style: italic;
-  min-width: 300px;
-  max-width: 25%;
+  font-family: "Roboto Mono";
+  text-transform: uppercase;
+  font-size: 14px;
 `;
 
 export const NavLink = styled.div`

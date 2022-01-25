@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import IPage from "../interface/page";
 import { Header, Column, NavLink } from "../styles";
 
-const Heading: React.FunctionComponent<IPage> = (props) => {
+const Navbar: React.FunctionComponent<IPage> = (props) => {
   return (
     <Header>
       <Link to="/">
@@ -11,14 +11,14 @@ const Heading: React.FunctionComponent<IPage> = (props) => {
       </Link>
       <Column>
         <NavLink>
-          <Link to="/about">About</Link>
+          <Link to="/about" className="nav">About</Link>
         </NavLink>
         <NavLink>
-          <Link to="/projects">Projects</Link>
+          <Link to="/projects" className="nav">Projects</Link>
         </NavLink>
       </Column>
     </Header>
   );
 };
 
-export default Heading;
+export default Navbar;

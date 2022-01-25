@@ -1,13 +1,12 @@
 import About from "../components/About";
 import Projects from '../components/Projects';
-import Landing from "../components/Landing";
 import IRoute from "../interface/route";
 
 const routes: IRoute[] = [
   {
     path: "/",
-    name: "Landing",
-    component: Landing,
+    name: "Projects",
+    component: Projects,
     exact: true,
   },
   {

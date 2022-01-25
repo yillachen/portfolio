@@ -9,12 +9,20 @@
   font-family: "Basis Grotesque";
   color: #0f1433;
   font-size: 18px;
+  line-height: 150%;
 }
 
 a,
 a:visited {
   color: #ff4724;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  cursor: crosshair;
+  background-color: #ff4724;
+  color: #fff;
 }
 
 h1 {
@@ -29,21 +37,46 @@ a > h1 {
   color: #ff4724;
 }
 
-h2 {
-  color: #0f1433;
-  font-family: "Tiempos Fine";
-  font-weight: normal;
+a:hover > h1 {
+  color: #fff;
   font-style: italic;
 }
 
-h3 {
+h2,
+h2 > span {
+  color: #0f1433;
+  font-family: "Tiempos Fine";
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+.nav,
+h3,
+h3 > a {
   font-family: "Roboto Mono";
   color: #ff4724;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 16px;
+  line-height: 180%;
 }
 
-h3 a {
-  text-transform: uppercase;
+@media screen and (max-width: 768px) {
+  #root {
+    float: none;
+    width: auto;
+  }
+  * {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 15px;
+  }
 }

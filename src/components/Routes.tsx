@@ -11,10 +11,10 @@ import Footer from "./Footer";
 import { Body } from '../styles'
 
 const Routes: React.FunctionComponent<{}> = (props) => {
-  console.log('Routes >>>', props)
   return (
     <BrowserRouter>
-      <Navbar name={"Heading"} />
+
+      <Navbar name={"Navbar"} />
       <Body>
         <Switch>
           {routes.map((route, index) => {

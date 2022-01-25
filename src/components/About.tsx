@@ -1,23 +1,22 @@
 import React from "react";
 import IPage from '../interface/page'
-import { AboutFlex, Column, List, AboutH2 } from "../styles";
+import { AboutFlex, Column, List } from "../styles";
 
 const About: React.FunctionComponent<IPage> = props => {
   return (
     <>
       <div>
         <h2>
-          Nice to e-meet you! My name is Yilla and I'm a motivated, forward-thinking Full Stack Engineer, born and raised in Brooklyn.
+          <span style={{ fontStyle: "italic" }}>Nice to e-meet you!</span> My name is Yilla and I'm a motivated, forward-thinking <span style={{ fontStyle: "italic" }}>Full Stack Engineer</span>, born and raised in Brooklyn.
           I'm passionate about creating impactful intuitive applications and moderizing technology so it's accessible for everyone.
         </h2>
         <h3>
-          Before coding, I was a Marketing Manager, focusing on skincare and SaaS. I'm also a skin science nerd (I'm a licensed esthetician, too!), and
-          love DIY home projects.
+          Before coding, I was a Marketing Manager, focusing on skincare and SaaS. I also love skin science — I'm a licensed esthetician, too — and DIY home projects. Currently, I mentor <a href="https://fullstackacademy.com" target="_blank" rel="noreferrer">Fullstack Academy</a> students, focusing on the PERN stack and DS&A.
         </h3>
       </div>
 
       <AboutFlex>
-        <AboutH2>Contact</AboutH2>
+        <h2>Contact</h2>
 
         <Column>
           <List>
@@ -32,7 +31,7 @@ const About: React.FunctionComponent<IPage> = props => {
       </AboutFlex>
 
       <AboutFlex>
-        <AboutH2>Skills</AboutH2>
+        <h2>Skills</h2>
 
         <Column>
           <List>
