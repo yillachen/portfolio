@@ -1,9 +1,9 @@
-/* export const Colors = {
+/* Branded Colors
   lavender: "#E0DEFF",
   navy: "#0F1433",
   green: "#E5EF53",
   red: "#FF4724",
-}; */
+  */
 
 * {
   font-family: "Basis Grotesque";
@@ -62,6 +62,8 @@ h3 > a {
   line-height: 180%;
 }
 
+/* Mobile Optimization */
+
 @media screen and (max-width: 768px) {
   #root {
     float: none;
@@ -73,7 +75,8 @@ h3 > a {
   h1 {
     font-size: 25px;
   }
-  h2 {
+  h2,
+  h2 > span {
     font-size: 24px;
   }
   h3 {

@@ -1,19 +1,27 @@
 import React from "react";
-import IPage from '../interface/page'
+import IPage from "../interface/page";
 import { AboutFlex, Column, List } from "../styles";
 
-const About: React.FunctionComponent<IPage> = props => {
+const About: React.FunctionComponent<IPage> = (props) => {
   return (
     <>
-      <div>
-        <h2>
-          <span style={{ fontStyle: "italic" }}>Nice to e-meet you!</span> My name is Yilla and I'm a motivated, forward-thinking <span style={{ fontStyle: "italic" }}>Full Stack Engineer</span>, born and raised in Brooklyn.
-          I'm passionate about creating impactful intuitive applications and moderizing technology so it's accessible for everyone.
-        </h2>
-        <h3>
-          Before coding, I was a Marketing Manager, focusing on skincare and SaaS. I also love skin science — I'm a licensed esthetician, too — and DIY home projects. Currently, I mentor <a href="https://fullstackacademy.com" target="_blank" rel="noreferrer">Fullstack Academy</a> students, focusing on the PERN stack and DS&A.
-        </h3>
-      </div>
+      <h2>
+        <span style={{ fontStyle: "italic" }}>Nice to e-meet you!</span> My name
+        is Yilla and I'm a motivated, forward-thinking{" "}
+        <span style={{ fontStyle: "italic" }}>Full Stack Engineer</span>, born
+        and raised in Brooklyn. I'm passionate about creating impactful
+        intuitive applications and moderizing technology so it's accessible for
+        everyone.
+      </h2>
+      <h3>
+        Before coding, I was a Marketing Manager, focusing on skincare and SaaS.
+        I also love skin science — I'm a licensed esthetician, too — and DIY
+        home projects. Currently, I mentor{" "}
+        <a href="https://fullstackacademy.com" target="_blank" rel="noreferrer">
+          Fullstack Academy
+        </a>{" "}
+        students, focusing on the PERN stack and DS&A.
+      </h3>
 
       <AboutFlex>
         <h2>Contact</h2>
@@ -58,6 +66,6 @@ const About: React.FunctionComponent<IPage> = props => {
       </AboutFlex>
     </>
   );
-}
+};
 
 export default About;

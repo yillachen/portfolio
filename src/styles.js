@@ -62,9 +62,14 @@ export const Main = styled.div`
 
 export const Body = styled.div`
   height: 68vh;
-  scroll-behavior: smooth;
   overflow-y: scroll;
   padding: 0 15px 0 0;
+`;
+
+export const ProjectMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 export const AboutFlex = styled.div`
@@ -121,6 +126,6 @@ export const BottomBar = styled.div`
   font-size: 14px;
 `;
 
-export const NavLink = styled.div`
+export const Nav = styled.div`
   padding: 0 15px 0 0;
 `;

@@ -1,12 +1,12 @@
 import React from "react";
 import IPage from "../interface/page";
-import { BottomBar, BottomLinks, NavLink } from "../styles";
+import { BottomBar, BottomLinks, Nav } from "../styles";
 
 const Footer: React.FunctionComponent<IPage> = (props) => {
   return (
     <BottomBar>
       <BottomLinks>
-        <NavLink>
+        <Nav>
           <a
             href="https://linkedin.com/in/yilla-chen"
             className="nav"
@@ -15,8 +15,8 @@ const Footer: React.FunctionComponent<IPage> = (props) => {
           >
             LinkedIn
           </a>
-        </NavLink>
-        <NavLink>
+        </Nav>
+        <Nav>
           <a
             href="https:/github.com/yillachen"
             target="_blank"
@@ -25,7 +25,7 @@ const Footer: React.FunctionComponent<IPage> = (props) => {
           >
             GitHub
           </a>
-        </NavLink>
+        </Nav>
       </BottomLinks>
       &copy; Designed with &hearts; by Yilla Chen, 2022
     </BottomBar>
