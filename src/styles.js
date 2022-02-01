@@ -1,4 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
+import px2vw from "./utils/px2vw";
+
 import Basis from "../src/fonts/BasisGrotesque.woff";
 import Basis2 from "../src/fonts/BasisGrotesque.woff2";
 import RobotoMono from "../src/fonts/RobotoMono.woff";
@@ -58,11 +60,27 @@ export const Main = styled.div`
   font-size: 18px;
   font-family: "Roboto Mono";
   font-style: normal;
+  background-color: transparent;
+
+  @media (min-width: 768px) {
+    width: ${px2vw(320, 768)};
+    min-height: ${px2vw(200, 768)};
+    height: 100%;
+    overflow: hidden;
+  }
+
+  @media (min-width: 1024px) {
+    width: ${px2vw(500)};
+    min-height: ${px2vw(300)};
+    height: 100%;
+    overflow: hidden;
+  }
 `;
 
 export const Body = styled.div`
   height: 68vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   padding: 0 15px 0 0;
 `;
 
@@ -102,7 +120,6 @@ export const Header = styled.div`
   height: 8vh;
   width: 100%;
   color: ${navy};
-  border-bottom: 1px solid ${green};
   padding: 25px 0 15px 0;
   margin-bottom: 25px;
 `;
@@ -118,7 +135,6 @@ export const BottomBar = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 5vh;
-  border-top: 1px solid ${green};
   padding-top: 25px;
   margin-top: 25px;
   font-family: "Roboto Mono";

@@ -8,7 +8,7 @@ import {
 import routes from "../config/routes";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Body } from '../styles'
+import { Body } from "../styles";
 
 const Routes: React.FunctionComponent<{}> = (props) => {
   return (
