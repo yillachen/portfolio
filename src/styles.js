@@ -62,19 +62,9 @@ export const Main = styled.div`
   font-style: normal;
   background-color: transparent;
 
-  @media (min-width: 768px) {
-    width: ${px2vw(320, 768)};
-    min-height: ${px2vw(200, 768)};
-    height: 100%;
-    overflow: hidden;
-  }
-
-  @media (min-width: 1024px) {
-    width: ${px2vw(500)};
-    min-height: ${px2vw(300)};
-    height: 100%;
-    overflow: hidden;
-  }
+    @media (max-width: 768px) {
+      margin: 0 25px 0 25px;
+    }
 `;
 
 export const Body = styled.div`
