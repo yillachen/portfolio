@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import px2vw from "./utils/px2vw";
 
 import Basis from "../src/fonts/BasisGrotesque.woff";
 import Basis2 from "../src/fonts/BasisGrotesque.woff2";
@@ -53,7 +52,7 @@ export const Colors = {
   red: "#FF4724",
 };
 
-const { lavender, navy, green, red } = Colors;
+const { navy } = Colors;
 
 export const Main = styled.div`
   margin: 0 50px 0 50px;
@@ -78,16 +77,27 @@ export const ProjectMain = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 `;
 
 export const AboutFlex = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 28px 28px 48px 0;
   width: 100%;
   color: ${navy};
 `;
+
+export const Label = styled.h2`
+  padding: 0 50px 0 0;
+  color: ${navy};
+  font-family: "Tiempos Fine";
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 140%;
+  width: 200px;
+`
 
 export const Column = styled.div`
   display: flex;

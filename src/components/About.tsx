@@ -1,13 +1,13 @@
 import React from "react";
 import IPage from "../interface/page";
-import { AboutFlex, Column, List } from "../styles";
+import { AboutFlex, Column, List, Label } from "../styles";
 
 const About: React.FunctionComponent<IPage> = (props) => {
   return (
     <>
       <h2>
         <span style={{ fontStyle: "italic" }}>Nice to e-meet you!</span> My name
-        is Yilla and I'm a motivated, forward-thinking{" "}
+        is Yilla and I'm a motivated, forward-thinking
         <span style={{ fontStyle: "italic" }}>Full Stack Engineer</span>, born
         and raised in Brooklyn. I'm passionate about creating impactful
         intuitive applications and moderizing technology so it's accessible for
@@ -16,15 +16,15 @@ const About: React.FunctionComponent<IPage> = (props) => {
       <h3>
         Before coding, I was a Marketing Manager, focusing on skincare and SaaS.
         I also love skin science — I'm a licensed esthetician, too — and DIY
-        home projects. Currently, I mentor{" "}
+        home projects. Currently, I mentor
         <a href="https://fullstackacademy.com" target="_blank" rel="noreferrer">
           Fullstack Academy
-        </a>{" "}
-        students, focusing on the PERN stack and DS&A.
+        </a>
+        students, focusing on the PERN stack (PostgreSQL, Express.js, React, Node.js) and DS&A.
       </h3>
 
       <AboutFlex>
-        <h2>Contact</h2>
+        <Label>Contact</Label>
 
         <Column>
           <List>
@@ -39,7 +39,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
       </AboutFlex>
 
       <AboutFlex>
-        <h2>Skills</h2>
+        <Label>Skills</Label>
 
         <Column>
           <List>
