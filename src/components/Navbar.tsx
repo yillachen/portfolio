@@ -1,5 +1,7 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { springTransition, springVariant } from "../config/transition";
 import IPage from "../interface/page";
 import { Header, Column, Nav } from "../styles";
 
@@ -12,23 +14,33 @@ const Navbar: React.FunctionComponent<IPage> = (props) => {
   };
 
   return (
-    <Header>
-      <Link to="/">
-        <h1>Yilla Chen</h1>
-      </Link>
-      <Column>
-        <Nav>
-          <NavLink to="/about" className="nav" activeStyle={active}>
-            About
-          </NavLink>
-        </Nav>
-        <Nav>
-          <NavLink to="/projects" className="nav" activeStyle={active}>
-            Projects
-          </NavLink>
-        </Nav>
-      </Column>
-    </Header>
+    <motion.div
+      animate="in"
+      initial="out"
+      exit="out"
+      variants={springVariant}
+      transition={springTransition}
+    >
+      <AnimatePresence exitBeforeEnter>
+        <Header>
+          <Link to="/">
+            <h1>Yilla Chen</h1>
+          </Link>
+          <Column>
+            <Nav>
+              <NavLink to="/about" className="nav" activeStyle={active}>
+                About
+              </NavLink>
+            </Nav>
+            <Nav>
+              <NavLink to="/projects" className="nav" activeStyle={active}>
+                Projects
+              </NavLink>
+            </Nav>
+          </Column>
+        </Header>
+      </AnimatePresence>
+    </motion.div>
   );
 };
 

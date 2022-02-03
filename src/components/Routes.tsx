@@ -9,31 +9,43 @@ import routes from "../config/routes";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Body } from "../styles";
+import { AnimatePresence, motion } from "framer-motion";
+import { fadeTransition, pageVariant } from "../config/transition";
 
 const Routes: React.FunctionComponent<{}> = (props) => {
   return (
     <BrowserRouter>
       <Navbar name={"Navbar"} />
-      <Body>
-        <Switch>
-          {routes.map((route, index) => {
-            return (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                render={(props: RouteComponentProps<any>) => (
-                  <route.component
-                    name={route.name}
-                    {...props}
-                    {...route.props}
+      <motion.div
+        animate="in"
+        initial="out"
+        exit="out"
+        variants={pageVariant}
+        transition={fadeTransition}
+      >
+        <Body>
+          <AnimatePresence exitBeforeEnter>
+            <Switch>
+              {routes.map((route, index) => {
+                return (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    exact={route.exact}
+                    render={(props: RouteComponentProps<any>) => (
+                      <route.component
+                        name={route.name}
+                        {...props}
+                        {...route.props}
+                      />
+                    )}
                   />
-                )}
-              />
-            );
-          })}
-        </Switch>
-      </Body>
+                );
+              })}
+            </Switch>
+          </AnimatePresence>
+        </Body>
+      </motion.div>
       <Footer name={"Footer"} />
     </BrowserRouter>
   );

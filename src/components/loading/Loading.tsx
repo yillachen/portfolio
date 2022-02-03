@@ -1,5 +1,4 @@
 import React from "react";
-import { Path, view } from "paper";
 
 function Loading() {
   // var path = new Path.Circle({
