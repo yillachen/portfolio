@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Body } from "../styles";
 import { AnimatePresence, motion } from "framer-motion";
-import { fadeTransition, pageVariant } from "../config/transition";
+import { fadeTransition, fadeVariant } from "../config/transition";
 
 const Routes: React.FunctionComponent<{}> = (props) => {
   return (
@@ -20,7 +20,7 @@ const Routes: React.FunctionComponent<{}> = (props) => {
         animate="in"
         initial="out"
         exit="out"
-        variants={pageVariant}
+        variants={fadeVariant}
         transition={fadeTransition}
       >
         <Body>

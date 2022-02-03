@@ -1,4 +1,5 @@
-const pageVariant = {
+// main
+const fadeVariant = {
   in: {
     opacity: 1
   },
@@ -28,6 +29,7 @@ const springTransition = {
   stiffness: 40
 };
 
+// navbar and footer
 const bSpringVariant = {
   in: {
     opacity: 1,
@@ -45,4 +47,23 @@ const bSpringTransition = {
   stiffness: 40
 };
 
-export { pageVariant, fadeTransition, springTransition, springVariant, bSpringTransition, bSpringVariant };
+// projects
+
+const scrollVariant = {
+  in: {
+    opacity: 1,
+    y: 0
+  },
+  out: {
+    opacity: 0,
+    y: '-100vH'
+  },
+};
+
+const scrollTransition = {
+  duration: 0.25,
+  type: 'spring',
+  stiffness: 40
+};
+
+export { fadeVariant, fadeTransition, springTransition, springVariant, bSpringTransition, bSpringVariant, scrollVariant, scrollTransition };

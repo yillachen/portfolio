@@ -67,10 +67,13 @@ export const Main = styled.div`
 `;
 
 export const Body = styled.div`
-  height: 68vh;
+  height: 65vh;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0 15px 0 0;
+    @media screen and (max-width: 768px) {
+      height: 70vH;
+    }
 `;
 
 export const ProjectMain = styled.div`
@@ -89,16 +92,6 @@ export const AboutFlex = styled.div`
   color: ${navy};
 `;
 
-export const Label = styled.h2`
-  padding: 0 50px 0 0;
-  color: ${navy};
-  font-family: "Tiempos Fine";
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 140%;
-  width: 200px;
-`
-
 export const Column = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -107,7 +100,7 @@ export const Column = styled.div`
 export const List = styled.ul`
   list-style: none;
   line-height: 150%;
-  width: 50vh;
+  width: 50vH;
   padding: 0;
 `;
 
@@ -122,6 +115,10 @@ export const Header = styled.div`
   color: ${navy};
   padding: 25px 0 15px 0;
   margin-bottom: 25px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5px;
+  }
 `;
 
 export const BottomLinks = styled.div`
@@ -134,12 +131,16 @@ export const BottomBar = styled.div`
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  height: 5vh;
-  padding-top: 25px;
-  margin-top: 25px;
+  height: 8vh;
+  padding: 25px 0 0 0;
+  margin: 25px 0 0 0;
   font-family: "Roboto Mono";
   text-transform: uppercase;
   font-size: 14px;
+
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
 `;
 
 export const Nav = styled.div`

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 import IPage from "../interface/page";
-import { AboutFlex, Column, List, Label } from "../styles";
-import { fadeTransition, pageVariant } from "../config/transition";
+import { AboutFlex, Column, List } from "../styles";
+import { fadeTransition, fadeVariant } from "../config/transition";
 
 const About: React.FunctionComponent<IPage> = (props) => {
   return (
@@ -10,7 +10,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
       animate="in"
       initial="out"
       exit="out"
-      variants={pageVariant}
+      variants={fadeVariant}
       transition={fadeTransition}
     >
       <h2>
@@ -33,7 +33,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
       </h3>
 
       <AboutFlex>
-        <Label>Contact</Label>
+        <h2>Contact</h2>
 
         <Column>
           <List>
@@ -48,7 +48,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
       </AboutFlex>
 
       <AboutFlex>
-        <Label>Skills</Label>
+        <h2 className="label">Skills</h2>
 
         <Column>
           <List>
@@ -58,7 +58,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
             <li>React</li>
             <li>React Native</li>
             <li>Redux</li>
-            <li>Node.js / Express.js</li>
+            <li>Node.js / Express.j3s</li>
             <li>PostgreSQL / Sequelize.js</li>
             <li>Styled Components</li>
             <li>MaterialUI</li>
