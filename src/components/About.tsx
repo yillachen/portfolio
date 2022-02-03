@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import IPage from "../interface/page";
-import { AboutFlex, Column, List } from "../styles";
+import { AboutFlex, Column, List, Desc } from "../styles";
 import { fadeTransition, fadeVariant } from "../config/transition";
 
 const About: React.FunctionComponent<IPage> = (props) => {
@@ -13,27 +13,40 @@ const About: React.FunctionComponent<IPage> = (props) => {
       variants={fadeVariant}
       transition={fadeTransition}
     >
-      <h2>
-        <span style={{ fontStyle: "italic" }}>Nice to e-meet you!</span> My name
-        is Yilla and I'm a motivated, forward-thinking{" "}
-        <span style={{ fontStyle: "italic" }}>Full Stack Engineer</span>, born
-        and raised in Brooklyn. I'm passionate about creating impactful
-        intuitive applications and moderizing technology so it's accessible for
-        everyone.
-      </h2>
-      <h3>
-        Before coding, I was a Marketing Manager, focusing on skincare and SaaS.
-        I also love skin science — I'm a licensed esthetician, too — and DIY
-        home projects. Currently, I mentor{" "}
-        <a href="https://fullstackacademy.com" target="_blank" rel="noreferrer">
-          Fullstack Academy
-        </a>{" "}
-        students, focusing on the PERN stack (PostgreSQL, Express.js, React,
-        Node.js) and DS&A.
-      </h3>
+      <AboutFlex>
+        <h2 className="label">About</h2>
+        <Column>
+          <Desc>
+            <h2>
+              <span style={{ fontStyle: "italic" }}>Nice to e-meet you!</span>
+            </h2>
+            <p>
+              My name is Yilla and I'm a motivated, forward-thinking{" "}
+              <span style={{ fontStyle: "italic" }}>Full Stack Engineer</span>,
+              born and raised in Brooklyn. I'm passionate about creating
+              impactful intuitive applications and moderizing technology so it's
+              accessible for everyone.
+            </p>
+            <p>
+              Before coding, I was a Marketing Manager, focusing on skincare and
+              SaaS. I also love skin science — I'm a licensed esthetician, too —
+              and DIY home projects. Currently, I mentor{" "}
+              <a
+                href="https://fullstackacademy.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Fullstack Academy
+              </a>{" "}
+              students, focusing on the PERN stack (PostgreSQL, Express.js,
+              React, Node.js) and DS&A.
+            </p>
+          </Desc>
+        </Column>
+      </AboutFlex>
 
       <AboutFlex>
-        <h2>Contact</h2>
+        <h2 className="label">Contact</h2>
 
         <Column>
           <List>

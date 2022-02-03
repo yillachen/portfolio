@@ -56,7 +56,7 @@ h1 > a:hover {
 
 h2,
 h2 > span,
-h2 .label {
+.label {
   color: #0f1433;
   font-family: "Tiempos Fine";
   font-weight: normal;
@@ -64,9 +64,11 @@ h2 .label {
   line-height: 140%;
 }
 
-h2 .label {
+.label {
   padding: 0 50px 0 0;
+  margin: 0;
   width: 200px;
+  display: block;
 }
 
 .nav,
@@ -184,40 +186,11 @@ h3 > a {
     font-size: 21px;
   }
   h2,
-  h2 > span {
+  h2 > span,
+  .label {
     font-size: 21px;
   }
   h3 {
     font-size: 14px;
   }
-}
-
-/* scroll test */
-.actions {
-  display: block;
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 2rem;
-}
-
-.actions > button {
-  padding: 0.5rem 1.25rem;
-  margin-right: 0.5rem;
-  border-radius: 1.25rem;
-  border: 0;
-  font-size: 1rem;
-  transition: all 0.1s ease-in-out;
-}
-
-.actions > button:hover,
-.actions > button:focus {
-  background-color: black;
-  color: white;
-}
-
-.actions > button:last-child {
-  margin-right: 0;
 }

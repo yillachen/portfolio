@@ -71,6 +71,11 @@ export const Body = styled.div`
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0 15px 0 0;
+
+    @media screen and (max-width: 820px) {
+      height: 59vH;
+    }
+
     @media screen and (max-width: 768px) {
       height: 70vH;
     }
@@ -104,6 +109,23 @@ export const List = styled.ul`
   padding: 0;
 `;
 
+export const Desc = styled.div`
+  line-height: 150%;
+  width: 75vH;
+  padding: 0;
+
+    @media screen and (max-width: 820px) {
+      width: 95%;
+      height: 95%;
+      overflow: hidden;
+    }
+    @media screen and (max-width: 768px) {
+      width: 95%;
+      height: 95%;
+      overflow: hidden;
+    }
+`;
+
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
@@ -116,9 +138,18 @@ export const Header = styled.div`
   padding: 25px 0 15px 0;
   margin-bottom: 25px;
 
-  @media screen and (max-width: 768px) {
-    margin-bottom: 5px;
-  }
+    @media screen and (max-width: 820px) {
+      width: 95%;
+      height: 95%;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5px;
+      width: 95%;
+      height: 95%;
+      overflow: hidden;
+    }
 `;
 
 export const BottomLinks = styled.div`
@@ -138,9 +169,18 @@ export const BottomBar = styled.div`
   text-transform: uppercase;
   font-size: 14px;
 
-      @media screen and (max-width: 768px) {
-        padding: 0;
-      }
+    @media screen and (max-width: 820px) {
+      width: 95%;
+      height: 95%;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      width: 95%;
+      height: 95%;
+      overflow: hidden;
+    }
 `;
 
 export const Nav = styled.div`
