@@ -1,8 +1,7 @@
 import React from "react";
-import { Main } from "../styles";
+import GlobalFonts, { Main } from "../../styles";
 import Routes from "./Routes";
-import IPage from "../interface/page";
-import GlobalFonts from '../styles'
+import IPage from "../../interface/page";
 
 const App: React.FunctionComponent<IPage> = props => {
   return (

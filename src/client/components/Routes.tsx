@@ -5,12 +5,12 @@ import {
   Switch,
   RouteComponentProps,
 } from "react-router-dom";
-import routes from "../config/routes";
+import routes from "../../config/routes";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Body } from "../styles";
+import { Body } from "../../styles";
 import { AnimatePresence, motion } from "framer-motion";
-import { fadeTransition, fadeVariant } from "../config/transition";
+import { fadeTransition, fadeVariant } from "../../config/transition";
 
 const Routes: React.FunctionComponent<{}> = (props) => {
   return (

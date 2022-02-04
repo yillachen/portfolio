@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
-import IPage from "../interface/page";
-import { AboutFlex, Column, List, Desc } from "../styles";
-import { fadeTransition, fadeVariant } from "../config/transition";
+import IPage from "../../interface/page";
+import { AboutFlex, Column, List, Desc } from "../../styles";
+import { fadeTransition, fadeVariant } from "../../config/transition";
 
 const About: React.FunctionComponent<IPage> = (props) => {
   return (
@@ -39,7 +39,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
                 Fullstack Academy
               </a>{" "}
               students, focusing on the PERN stack (PostgreSQL, Express.js,
-              React, Node.js) and DS&A.
+              React, Node.js), data structures and algorithms.
             </p>
           </Desc>
         </Column>

@@ -1,8 +1,8 @@
-import About from "../components/About";
-import Projects from "../components/Projects";
+import About from "../client/components/About";
+import Projects from "../client/components/Projects";
 import IRoute from "../interface/route";
-import Mesh from '../components/projects/mesh'
-import Hearth from '../components/projects/hearth'
+import Mesh from '../client/components/projects/mesh'
+import Hearth from '../client/components/projects/hearth'
 
 const routes: IRoute[] = [
   {

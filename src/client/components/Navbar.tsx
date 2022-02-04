@@ -1,9 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { springTransition, springVariant } from "../config/transition";
-import IPage from "../interface/page";
-import { Header, Column, Nav } from "../styles";
+import { springTransition, springVariant } from "../../config/transition";
+import IPage from "../../interface/page";
+import { Header, Column, Nav } from "../../styles";
 
 const Navbar: React.FunctionComponent<IPage> = (props) => {
   const active = {

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import IPage from "../interface/page";
-import { ProjectMain } from "../styles";
+import IPage from "../../interface/page";
+import { ProjectMain } from "../../styles";
 import { motion } from "framer-motion";
-import { fadeTransition, fadeVariant } from "../config/transition";
+import { fadeTransition, fadeVariant } from "../../config/transition";
 
 const Projects: React.FunctionComponent<IPage> = (props) => {
   return (

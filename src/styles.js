@@ -1,13 +1,13 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-import Basis from "../src/fonts/BasisGrotesque.woff";
-import Basis2 from "../src/fonts/BasisGrotesque.woff2";
-import RobotoMono from "../src/fonts/RobotoMono.woff";
-import RobotoMono2 from "../src/fonts/RobotoMono.woff2";
-import Tiempos from "../src/fonts/TiemposFine.woff";
-import Tiempos2 from "../src/fonts/TiemposFine.woff2";
-import TiemposItalic from "../src/fonts/TiemposFineItalic.woff";
-import TiemposItalic2 from "../src/fonts/TiemposFineItalic.woff2";
+import Basis from "../src/client/fonts/BasisGrotesque.woff";
+import Basis2 from "../src/client/fonts/BasisGrotesque.woff2";
+import RobotoMono from "../src/client/fonts/RobotoMono.woff";
+import RobotoMono2 from "../src/client/fonts/RobotoMono.woff2";
+import Tiempos from "../src/client/fonts/TiemposFine.woff";
+import Tiempos2 from "../src/client/fonts/TiemposFine.woff2";
+import TiemposItalic from "../src/client/fonts/TiemposFineItalic.woff";
+import TiemposItalic2 from "../src/client/fonts/TiemposFineItalic.woff2";
 
 export default createGlobalStyle`
   @font-face {
@@ -66,21 +66,6 @@ export const Main = styled.div`
     }
 `;
 
-export const Body = styled.div`
-  height: 65vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 0 15px 0 0;
-
-    @media screen and (max-width: 820px) {
-      height: 59vH;
-    }
-
-    @media screen and (max-width: 768px) {
-      height: 70vH;
-    }
-`;
-
 export const ProjectMain = styled.div`
   display: flex;
   flex-direction: column;
@@ -111,7 +96,7 @@ export const List = styled.ul`
 
 export const Desc = styled.div`
   line-height: 150%;
-  width: 75vH;
+  width: 98vH;
   padding: 0;
 
     @media screen and (max-width: 820px) {
@@ -136,11 +121,10 @@ export const Header = styled.div`
   width: 100%;
   color: ${navy};
   padding: 25px 0 15px 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
     @media screen and (max-width: 820px) {
-      width: 95%;
-      height: 95%;
+      padding: 20px 0 15px 0;
       overflow: hidden;
     }
 
@@ -149,6 +133,21 @@ export const Header = styled.div`
       width: 95%;
       height: 95%;
       overflow: hidden;
+    }
+`;
+
+export const Body = styled.div`
+  height: 68vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0 15px 0 0;
+
+    @media screen and (max-width: 820px) {
+      height: 70vH;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 70vH;
     }
 `;
 
@@ -163,8 +162,8 @@ export const BottomBar = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 8vh;
-  padding: 25px 0 0 0;
-  margin: 25px 0 0 0;
+  padding: 15px 0 0 0;
+  margin: 15px 0 0 0;
   font-family: "Roboto Mono";
   text-transform: uppercase;
   font-size: 14px;

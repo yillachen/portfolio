@@ -1,6 +1,6 @@
 import React from "react";
-import IPage from "../../interface/page";
-import { ProjectMain } from "../../styles";
+import IPage from "../../../interface/page";
+import { ProjectMain } from "../../../styles";
 
 const Hearth: React.FunctionComponent<IPage> = (props) => {
   return (

@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import IPage from "../interface/page";
-import { BottomBar, BottomLinks, Nav } from "../styles";
-import { bSpringTransition, bSpringVariant } from "../config/transition";
+import IPage from "../../interface/page";
+import { BottomBar, BottomLinks, Nav } from "../../styles";
+import { bSpringTransition, bSpringVariant } from "../../config/transition";
 
 const Footer: React.FunctionComponent<IPage> = (props) => {
   return (
