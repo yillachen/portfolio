@@ -1,6 +1,6 @@
 import React from "react";
 import IPage from "../../../interface/page";
-import { ProjectMain } from "../../../styles";
+import { ProjList, ProjFlex } from "../../../styles";
 import { motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../../../config/transition";
 import { Controller, Scene } from "react-scrollmagic";
@@ -15,51 +15,87 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
       exit="out"
       variants={fadeVariant}
       transition={fadeTransition}
+      style={{ textAlign: "center" }}
     >
-      <ProjectMain>
-        <h2>Mesh</h2>
-        <img src={mesh} alt="Mesh" style={{ width: "50%", height: "50%" }} />
-      </ProjectMain>
+      <h1>Mesh</h1>
       <Controller>
         <div>
           <Scene
-            duration={400}
-            pin={{ pushFollowers: true }}
+            duration={200}
+            pin={{ pushFollowers: false }}
             triggerHook={0.5}
             offset={125}
           >
-            <div>
-              <h3>
-                Mesh is a personal safety app that helps you find the safest
-                path to your destination, plus automatically alerts your friends
-                if anything unexpected happens during your trip.
-              </h3>
-              <h2>Start editing to see change the magic</h2>
+            <div className="heroProj">
+              <img className="heroImg" src={mesh} alt="Mesh" />
+              <div>
+                <h3>
+                  Mesh is a mobile application built with React Native connected
+                  to a NoSQL database via Firebase, and deployed on Expo. (Not
+                  currently available for download.)
+                  <br />
+                  <br />
+                  This personal safety app is designed to find the safest route
+                  to your destination using the Google Maps API.
+                </h3>
+                <br />
+                <img
+                  alt="React Native"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  className="techIcon"
+                />
+                <img
+                  alt="Firebase"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                  className="techIcon"
+                />
+                <img
+                  alt="Google Maps API"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original-wordmark.svg"
+                  className="techIcon"
+                />
+              </div>
             </div>
           </Scene>
-          <h2>Outside the scene</h2>
+          <br />
           <br />
           <Scene
             duration={300}
-            triggerHook={0.75}
-            pin={{ pushFollowers: false }}
+            triggerHook={0.35}
+            pin={{ pushFollowers: true }}
           >
             {(progress: number | undefined) => (
               <div className="mx-auto">
                 <Timeline totalProgress={progress} paused>
                   <Timeline
-                    target={<p className="timeline">Watch me appear!</p>}
-                  >
-                    <Tween from={{ opacity: -1 }} to={{ opacity: 1 }} />
-                  </Timeline>
-                  <Timeline
                     target={
-                      <p className="timeline">
-                        Watch me move! and then disappear!
-                      </p>
+                      <>
+                        <h3>Key Features Implemented</h3>
+                        <ProjFlex>
+                          <ProjList>
+                            Plan your safest routes around town with a
+                            crime-density heat map that uses over 300,000
+                            reported incidents via the NYC public database.
+                          </ProjList>
+                          <ProjList>
+                            Create trusted groups of contacts, called Safety
+                            Nets, who receive your notifications and SOS
+                            signals.
+                          </ProjList>
+                          <ProjList>
+                            Send automatic messages to your Safety Nets when you
+                            get home, reach safe-points in your journey, or if
+                            something goes wrong.
+                          </ProjList>
+                          <ProjList>
+                            Contribute to Mesh's safety data by filing your own
+                            incident reports.
+                          </ProjList>
+                        </ProjFlex>
+                      </>
                     }
                   >
-                    <Tween from={{ x: -1000 }} to={{ x: 250 }} />
+                    <Tween from={{ x: -1000 }} to={{ x: 0 }} />
                     <Tween from={{ opacity: 1 }} to={{ opacity: -1 }} />
                   </Timeline>
                 </Timeline>
@@ -67,47 +103,32 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
             )}
           </Scene>
         </div>
-        <h1> Bye! </h1>
+        <br />
+        <br />
+        <div>
+          View our code on
+          <br />
+          <br />
+          <a href="https://git.io/JDgMl" target="_blank" rel="noreferrer">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+              alt=""
+              className="techIcon"
+            />
+          </a>
+        </div>
+        <br />
+        <br />
+        <iframe
+          width="640px"
+          height="360px"
+          src="https://www.youtube.com/embed/iIcVlc-Fi8o"
+          title="YouTube video player"
+          frameBorder="0"
+        ></iframe>
+        <br />
+        <br />
       </Controller>
-      {/* <ProjectMain>
-        <h2>Mesh</h2>
-        <Controller>
-          <Scene
-            duration={400}
-            pin={{ pushFollowers: false }}
-            triggerHook={1}
-            offset={125}
-          >
-            <h2>
-              Mesh is a personal safety app that helps you find the safest path
-              to your destination, plus automatically alerts your friends if
-              anything unexpected happens during your trip.
-            </h2>
-
-            <div>
-              <ul>
-                <li>
-                  Plan your safest routes around town with a crime-density heat
-                  map that uses over 300,000 reported incidents via the NYC
-                  public database.
-                </li>
-                <li>
-                  Create trusted groups of contacts, called Safety Nets, who
-                  receive your notifications and SOS signals.
-                </li>
-                <li>
-                  Send automatic messages to your Safety Nets when you get home,
-                  reach safe-points in your journey, or if something goes wrong.
-                </li>
-                <li>
-                  Contribute to Mesh's safety data by filing your own incident
-                  reports.
-                </li>
-              </ul>
-            </div>
-          </Scene>
-        </Controller>
-      </ProjectMain> */}
     </motion.div>
   );
 };

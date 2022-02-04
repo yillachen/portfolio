@@ -185,3 +185,23 @@ export const BottomBar = styled.div`
 export const Nav = styled.div`
   padding: 0 15px 0 0;
 `;
+
+export const ProjList = styled.li`
+    display: block;
+    padding: 5px;
+`
+
+export const ProjFlex = styled.div`
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+
+    @media screen and (max-width: 820px) {
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 10px;
+    }
+`
