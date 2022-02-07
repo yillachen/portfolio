@@ -71,7 +71,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
             <li>React</li>
             <li>React Native</li>
             <li>Redux</li>
-            <li>Node.js / Express.j3s</li>
+            <li>Node.js / Express.js</li>
             <li>PostgreSQL / Sequelize.js</li>
             <li>Styled Components</li>
             <li>MaterialUI</li>

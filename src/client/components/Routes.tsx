@@ -8,6 +8,7 @@ import {
 import routes from "../../config/routes";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Gradient from './bg'
 import { Body } from "../../styles";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../../config/transition";
@@ -47,6 +48,7 @@ const Routes: React.FunctionComponent<{}> = (props) => {
         </Body>
       </motion.div>
       <Footer name={"Footer"} />
+      <Gradient />
     </BrowserRouter>
   );
 };

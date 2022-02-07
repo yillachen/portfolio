@@ -1,8 +1,9 @@
 import About from "../client/components/About";
 import Projects from "../client/components/Projects";
 import IRoute from "../interface/route";
-import Mesh from '../client/components/projects/mesh'
-import Hearth from '../client/components/projects/hearth'
+import Mesh from "../client/components/projects/mesh";
+import Hearth from "../client/components/projects/hearth";
+import Loading from "../client/components/loading/Loading";
 
 const routes: IRoute[] = [
   {
@@ -33,6 +34,12 @@ const routes: IRoute[] = [
     path: "/projects/hearth",
     name: "Hearth",
     component: Hearth,
+    exact: true,
+  },
+  {
+    path: "/loading",
+    name: "Hearth",
+    component: Loading,
     exact: true,
   },
 ];

@@ -1,21 +1,21 @@
 import React from "react";
+import Lottie from "react-lottie";
+import wave from "./wave.json";
 
-function Loading() {
-  // var path = new Path.Circle({
-  //   center: view.center,
-  //   radius: 70,
-  //   fillColor: "red",
-  // });
+export default function Loading() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: wave,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
-  // function onFrame(event) {
-  //   // Each frame, change the fill color of the path slightly by
-  //   // adding 1 to its hue:
-  //   path.fillColor.hue += 1;
-  // }
-
-  // onFrame(path)
-
-  return <div>Test</div>;
+  return (
+    <div style={{marginTop: '15%'}}>
+      <h3 style={{textAlign: 'center'}}>Loading...</h3>
+      <Lottie options={defaultOptions} style={{ height: '50vH' }} />
+    </div>
+  );
 }
-
-export default Loading;

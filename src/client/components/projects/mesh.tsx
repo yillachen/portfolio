@@ -58,10 +58,9 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
             </div>
           </Scene>
           <br />
-          <br />
           <Scene
             duration={300}
-            triggerHook={0.35}
+            triggerHook={0.25}
             pin={{ pushFollowers: true }}
           >
             {(progress: number | undefined) => (
@@ -95,8 +94,7 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
                       </>
                     }
                   >
-                    <Tween from={{ x: -1000 }} to={{ x: 0 }} />
-                    <Tween from={{ opacity: 1 }} to={{ opacity: -1 }} />
+                    <Tween from={{ x: -1500 }} to={{ x: 0 }} />
                   </Timeline>
                 </Timeline>
               </div>
@@ -105,27 +103,27 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
         </div>
         <br />
         <br />
-        <div>
-          View our code on
-          <br />
-          <br />
-          <a href="https://git.io/JDgMl" target="_blank" rel="noreferrer">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-              alt=""
-              className="techIcon"
-            />
-          </a>
-        </div>
-        <br />
         <br />
         <iframe
-          width="640px"
-          height="360px"
+          style={{ boxShadow: "0 0 15px #E0DEFF" }}
+          width="80%"
+          height="420px"
           src="https://www.youtube.com/embed/iIcVlc-Fi8o"
           title="YouTube video player"
           frameBorder="0"
         ></iframe>
+        <br />
+        <br />
+        View the code on
+        <br />
+        <br />
+        <a href="https://git.io/JDgMl" target="_blank" rel="noreferrer">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+            alt=""
+            className="techIcon"
+          />
+        </a>
         <br />
         <br />
       </Controller>

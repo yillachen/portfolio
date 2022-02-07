@@ -49,7 +49,7 @@ h1 > a {
 }
 
 h1 > a:hover {
-  background-color: #fff;
+  background-color: transparent;
   color: #ff4724;
   font-style: italic;
 }
@@ -82,18 +82,14 @@ h3 > a {
   line-height: 180%;
 }
 
-/* animated bg */
-
 .greenCircle {
   width: 40vw;
   height: 40vw;
   background-color: #e5ef53;
   position: absolute;
-  animation-name: greenCircle;
-  animation-duration: 15s;
+  bottom: 0;
+  left: 0;
   border-radius: 50%;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   z-index: -1;
   filter: blur(200px);
 }
@@ -103,16 +99,14 @@ h3 > a {
   height: 60vw;
   background-color: #e0deff;
   position: absolute;
-  animation-name: lavCircle;
-  animation-duration: 20s;
   border-radius: 50%;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  top: 0;
+  right: 0;
   z-index: -1;
   filter: blur(200px);
 }
 
-@keyframes greenCircle {
+/* @keyframes greenCircle {
   0% {
     left: 50%;
     top: 100%;
@@ -156,7 +150,7 @@ h3 > a {
     left: 18%;
     top: 100%;
   }
-}
+} */
 
 .heroImg {
   width: 50%;
@@ -173,6 +167,7 @@ h3 > a {
 .techIcon {
   width: 50px;
   height: 50px;
+  padding: 0 10px 0 0;
 }
 
 .projList {
