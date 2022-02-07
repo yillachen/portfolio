@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import IPage from "../../interface/page";
 import { ProjectMain } from "../../styles";
 import { motion } from "framer-motion";
@@ -15,8 +15,18 @@ const Projects: React.FunctionComponent<IPage> = (props) => {
       transition={fadeTransition}
     >
       <ProjectMain>
-        <Link to="/projects/mesh">Mesh</Link>
-        <Link to="/projects/hearth">Hearth</Link>
+        <Link to="/projects/mesh">
+          <div className="project">
+            <h2 className="projectTitle">Mesh</h2>
+            <h3>Mobile application</h3>
+          </div>
+        </Link>
+        <Link to="/projects/hearth">
+          <div className="project">
+            <h2 className="projectTitle">Hearth</h2>
+            <h3>E-commerce website</h3>
+          </div>
+        </Link>
       </ProjectMain>
     </motion.div>
   );

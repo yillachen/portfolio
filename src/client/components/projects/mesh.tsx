@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import IPage from "../../../interface/page";
 import { ProjList, ProjFlex } from "../../../styles";
 import { motion } from "framer-motion";
@@ -6,8 +6,23 @@ import { fadeTransition, fadeVariant } from "../../../config/transition";
 import { Controller, Scene } from "react-scrollmagic";
 import mesh from "../../images/mesh.gif";
 import { Timeline, Tween } from "react-gsap";
+import PageLoader from "../loading/PageLoader";
 
 const Mesh: React.FunctionComponent<IPage> = (props) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const delay = () => {
+      setTimeout(() => setLoading(false), 2600);
+    };
+    delay();
+    return () => console.log("Unmounting...");
+  }, []);
+
+  if (loading) {
+    return <PageLoader />;
+  }
+
   return (
     <motion.div
       animate="in"

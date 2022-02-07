@@ -23,7 +23,7 @@ const Navbar: React.FunctionComponent<IPage> = (props) => {
     >
       <AnimatePresence exitBeforeEnter>
         <Header>
-          <h1>
+          <h1 id="title">
             <Link to="/">Yilla Chen</Link>
           </h1>
           <Column>

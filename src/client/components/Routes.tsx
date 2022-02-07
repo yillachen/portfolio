@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter,
   Route,
@@ -8,7 +8,7 @@ import {
 import routes from "../../config/routes";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Gradient from './bg'
+import Gradient from "./bg";
 import { Body } from "../../styles";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../../config/transition";

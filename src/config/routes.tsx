@@ -4,6 +4,7 @@ import IRoute from "../interface/route";
 import Mesh from "../client/components/projects/mesh";
 import Hearth from "../client/components/projects/hearth";
 import Loading from "../client/components/loading/Loading";
+import PageLoader from "../client/components/loading/PageLoader";
 
 const routes: IRoute[] = [
   {
@@ -35,13 +36,7 @@ const routes: IRoute[] = [
     name: "Hearth",
     component: Hearth,
     exact: true,
-  },
-  {
-    path: "/loading",
-    name: "Hearth",
-    component: Loading,
-    exact: true,
-  },
+  }
 ];
 
 export default routes;

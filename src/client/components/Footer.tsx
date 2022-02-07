@@ -37,7 +37,7 @@ const Footer: React.FunctionComponent<IPage> = (props) => {
               </a>
             </Nav>
           </BottomLinks>
-          &copy; Designed with &hearts; by Yilla Chen, 2022
+          &copy; Designed with &hearts; by me, 2022
         </BottomBar>
       </AnimatePresence>
     </motion.div>

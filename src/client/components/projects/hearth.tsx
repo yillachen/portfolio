@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import IPage from "../../../interface/page";
 import { ProjList, ProjFlex } from "../../../styles";
 import { motion } from "framer-motion";
@@ -7,8 +7,23 @@ import { Controller, Scene } from "react-scrollmagic";
 import { Timeline, Tween } from "react-gsap";
 import hearth1 from "../../images/hearth-1.png";
 import hearth2 from "../../images/hearth-2.png";
+import PageLoader from "../loading/PageLoader";
 
 const Hearth: React.FunctionComponent<IPage> = (props) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const delay = () => {
+      setTimeout(() => setLoading(false), 2600);
+    };
+    delay();
+    return () => console.log("Unmounting...");
+  }, []);
+
+  if (loading) {
+    return <PageLoader />;
+  }
+
   return (
     <motion.div
       animate="in"
