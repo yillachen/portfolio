@@ -3,8 +3,6 @@ import Projects from "../client/components/Projects";
 import IRoute from "../interface/route";
 import Mesh from "../client/components/projects/mesh";
 import Hearth from "../client/components/projects/hearth";
-import Loading from "../client/components/loading/Loading";
-import PageLoader from "../client/components/loading/PageLoader";
 
 const routes: IRoute[] = [
   {
