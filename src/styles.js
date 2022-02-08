@@ -57,8 +57,6 @@ const { navy } = Colors;
 export const Main = styled.div`
   margin: 0 50px 0 50px;
   font-size: 18px;
-  font-family: "Roboto Mono", monospace;
-  font-style: normal;
   background-color: transparent;
 
   @media (max-width: 768px) {

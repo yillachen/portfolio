@@ -42,8 +42,7 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
             offset={125}
           >
             <div className="heroProj">
-              <img style={{width: '60%', height: '60%'}} src={mesh} alt="Mesh" />
-              <br /><br />
+              <img style={{width: '60%', height: '60%', marginBottom: 25}} src={mesh} alt="Mesh" />
               <div>
                 <h3>
                   Mesh is a mobile application built with React Native connected
