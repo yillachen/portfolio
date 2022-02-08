@@ -189,6 +189,8 @@ const Hearth: React.FunctionComponent<IPage> = (props) => {
         </div>
         <br />
         <br />
+        <br />
+        <br />
       </Controller>
     </motion.div>
   );
