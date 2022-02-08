@@ -99,6 +99,7 @@ const Hearth: React.FunctionComponent<IPage> = (props) => {
               flexDirection: "row",
               justifyContent: "space-evenly",
               alignItems: "flex-start",
+              flexWrap: 'wrap'
             }}
           >
             <img className="heroImg" src={hearth1} alt="Hearth" />
