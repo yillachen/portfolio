@@ -48,8 +48,7 @@ h1 {
 }
 
 h2,
-h2 > span,
-.label {
+h2 > span {
   color: #0f1433;
   font-family: "Tiempos Fine", "Playfair Display", serif;
   font-weight: normal;
@@ -60,7 +59,7 @@ h2 > span,
 }
 
 .label {
-  padding: 0 50px 0 0;
+  padding-bottom: 25px;
   margin: 0;
   width: 200px;
   display: block;
@@ -89,6 +88,10 @@ h3 > a {
   z-index: -1;
   opacity: 0.5;
   filter: blur(200px);
+  animation-name: greenCircle;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .lavCircle {
@@ -101,53 +104,41 @@ h3 > a {
   right: 0;
   z-index: -1;
   filter: blur(200px);
+  animation-name: lavCircle;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-/* @keyframes greenCircle {
+@keyframes greenCircle {
   0% {
-    left: 50%;
-    top: 100%;
-  }
-  25% {
-    left: 75%;
-    top: 50%;
-  }
-  50% {
-    left: 50%;
-    top: 0%;
-  }
-  75% {
-    left: 0%;
-    top: 100%;
-  }
-  100% {
-    left: 0%;
-    top: 0%;
-  }
-} */
-
-/* @keyframes lavCircle {
-  0% {
-    left: 0%;
-    top: 0%;
-  }
-  25% {
     left: 25%;
-    top: 12%;
+    bottom: 25%;
   }
   50% {
     left: 50%;
-    top: 44%;
-  }
-  75% {
-    left: 75%;
-    top: 25%;
+    bottom: 50%;
   }
   100% {
-    left: 18%;
-    top: 100%;
+    left: 100%;
+    bottom: 100%;
   }
-} */
+}
+
+@keyframes lavCircle {
+  0% {
+    right: 0%;
+    top: 0%;
+  }
+  50% {
+    right: 50%;
+    top: 22%;
+  }
+  100% {
+    right: 75%;
+    top: 60%;
+  }
+}
 
 /* Projects */
 .projectTitle {
@@ -219,11 +210,15 @@ h3 > a {
   a:visited {
     font-size: 14px;
   }
+  #title,
   #title > a,
   #title > a:visited,
   #title > a:hover {
     font-size: 21px;
-    margin-top: 0;
+    margin: 0;
+    padding-top: 0;
+    line-height: 21px;
+    text-align: center;
   }
   h2,
   h2 > span,

@@ -58,9 +58,16 @@ export const Main = styled.div`
   margin: 0 50px 0 50px;
   font-size: 18px;
   background-color: transparent;
+  overflow: hidden;
+
+  @media screen and (max-width: 820px) {
+    margin: 0 50px 0 50px;
+    overflow: hidden;
+  }
 
   @media (max-width: 768px) {
     margin: 0 25px 0 25px;
+    overflow: hidden;
   }
 `;
 
@@ -123,31 +130,30 @@ export const Header = styled.div`
   margin-bottom: 15px;
 
   @media screen and (max-width: 820px) {
-    padding: 0px 0 15px 0;
+    padding: 25px 0 25px 0;
     overflow: hidden;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0px 0 15px 0;
-    margin-bottom: 5px;
-    width: 95%;
-    height: 90%;
-    overflow: hidden;
+    padding: 10px 0 10px 0;
+    height: 10vH;
+    justify-content: center;
+    flex-direction: column;
   }
 `;
 
 export const Body = styled.div`
-  height: 68vh;
+  height: 80vh;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0 15px 0 0;
 
   @media screen and (max-width: 820px) {
-    height: 68vh;
+    height: 80vh;
   }
 
   @media screen and (max-width: 768px) {
-    height: 68vh;
+    height: 80vh;
   }
 `;
 
@@ -179,6 +185,7 @@ export const BottomBar = styled.div`
     width: 95%;
     height: 95%;
     overflow: hidden;
+    align-items: center;
   }
 `;
 
