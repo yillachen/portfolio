@@ -45,7 +45,11 @@ const Navbar: React.FunctionComponent<IPage> = (props) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  LinkedIn
+                  <img
+                    alt="LinkedIn"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                    style={{ width: 25 }}
+                  />
                 </a>
               </Nav>
               <Nav>
@@ -55,7 +59,11 @@ const Navbar: React.FunctionComponent<IPage> = (props) => {
                   className="nav"
                   rel="noreferrer"
                 >
-                  GitHub
+                  <img
+                    alt="GitHub"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    style={{ width: 25 }}
+                  />
                 </a>
               </Nav>
             </>

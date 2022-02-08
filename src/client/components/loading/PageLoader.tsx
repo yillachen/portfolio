@@ -4,7 +4,7 @@ import loader from "./loader.json";
 
 export default function PageLoader() {
   return (
-    <div style={{top: '50%'}}>
+    <div style={{top: '65%'}}>
       <Player
         autoplay
         loop

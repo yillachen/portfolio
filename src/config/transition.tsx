@@ -29,22 +29,4 @@ const springTransition = {
   stiffness: 40
 };
 
-// navbar and footer
-const bSpringVariant = {
-  in: {
-    opacity: 1,
-    y: 0
-  },
-  out: {
-    opacity: 0,
-    y: '100vH'
-  },
-};
-
-const bSpringTransition = {
-  duration: 0.25,
-  type: 'spring',
-  stiffness: 40
-};
-
-export { fadeVariant, fadeTransition, springTransition, springVariant, bSpringTransition, bSpringVariant};
+export { fadeVariant, fadeTransition, springTransition, springVariant};

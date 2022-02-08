@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import routes from "../../config/routes";
 import Navbar from "./Navbar";
-// import Footer from "./Footer";
 import Gradient from "./bg";
 import { Body } from "../../styles";
 import { AnimatePresence, motion } from "framer-motion";
