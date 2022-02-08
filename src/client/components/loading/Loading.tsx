@@ -5,7 +5,8 @@ import wave from "./wave.json";
 export default function Loading() {
   return (
     <div style={{ marginTop: "10%" }}>
-      <h3 style={{ textAlign: "center" }}>Loading...</h3>
+      <h3 style={{ textAlign: "center" }}>Loading...<br />
+      (Best viewed on Desktop)</h3>
       <Player
         autoplay
         loop

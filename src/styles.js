@@ -124,14 +124,15 @@ export const Header = styled.div`
   margin-bottom: 15px;
 
   @media screen and (max-width: 820px) {
-    padding: 20px 0 15px 0;
+    padding: 0px 0 15px 0;
     overflow: hidden;
   }
 
   @media screen and (max-width: 768px) {
+    padding: 0px 0 15px 0;
     margin-bottom: 5px;
     width: 95%;
-    height: 95%;
+    height: 90%;
     overflow: hidden;
   }
 `;
@@ -143,11 +144,11 @@ export const Body = styled.div`
   padding: 0 15px 0 0;
 
   @media screen and (max-width: 820px) {
-    height: 70vh;
+    height: 68vh;
   }
 
   @media screen and (max-width: 768px) {
-    height: 70vh;
+    height: 68vh;
   }
 `;
 

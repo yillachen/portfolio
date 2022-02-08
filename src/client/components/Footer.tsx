@@ -28,7 +28,7 @@ const Footer: React.FunctionComponent<IPage> = (props) => {
             </Nav>
             <Nav>
               <a
-                href="https:/github.com/yillachen"
+                href="https://github.com/yillachen"
                 target="_blank"
                 className="nav"
                 rel="noreferrer"
