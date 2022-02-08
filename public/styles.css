@@ -107,7 +107,7 @@ h3 > a {
   animation-name: lavCircle;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-direction: normal;
+  animation-direction: alternate;
 }
 
 @keyframes greenCircle {
@@ -246,11 +246,9 @@ h3 > a {
     margin-top: 10px;
   }
   .lavCircle {
-    width: 400px;
-    height: 400px;
+    display: none;
   }
   .greenCircle {
-    width: 200px;
-    height: 200px;
+    display: none;
   }
 }
