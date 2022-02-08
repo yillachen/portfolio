@@ -1,5 +1,5 @@
 * {
-  font-family: "Basis Grotesque";
+  font-family: "Basis Grotesque", "Helvetica", sans-serif;
   color: #0f1433;
   font-size: 18px;
   line-height: 150%;
@@ -31,12 +31,12 @@ h1 {
   font-size: 42px;
   font-weight: normal;
   color: #0f1433;
-  font-family: "Tiempos Fine";
+  font-family: "Tiempos Fine", "Playfair Display", serif;
 }
 
 #title > a,
 #title > a:visited {
-  font-family: "Tiempos Fine";
+  font-family: "Tiempos Fine", "Playfair Display", serif;
   font-size: 42px;
   font-weight: normal;
   color: #ff4724;
@@ -51,7 +51,7 @@ h2,
 h2 > span,
 .label {
   color: #0f1433;
-  font-family: "Tiempos Fine";
+  font-family: "Tiempos Fine", "Playfair Display", serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 140%;
@@ -67,7 +67,7 @@ h2 > span,
 .nav,
 h3,
 h3 > a {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   color: #ff4724;
   font-weight: normal;
   text-transform: uppercase;

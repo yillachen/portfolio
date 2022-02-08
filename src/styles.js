@@ -57,7 +57,7 @@ const { navy } = Colors;
 export const Main = styled.div`
   margin: 0 50px 0 50px;
   font-size: 18px;
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   background-color: transparent;
 
@@ -165,7 +165,7 @@ export const BottomBar = styled.div`
   height: 8vh;
   padding: 15px 0 0 0;
   margin: 15px 0 0 0;
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
   font-size: 14px;
 
