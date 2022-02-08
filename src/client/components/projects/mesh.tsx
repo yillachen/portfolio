@@ -42,33 +42,33 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
             offset={125}
           >
             <div className="heroProj">
-              <img className="heroImg" src={mesh} alt="Mesh" />
+              <img style={{width: '60%', height: '60%'}} src={mesh} alt="Mesh" />
+              <br /><br />
               <div>
                 <h3>
                   Mesh is a mobile application built with React Native connected
-                  to a NoSQL database via Firebase, and deployed on Expo. (Not
-                  currently available for download.)
+                  to a NoSQL database via Firebase, and deployed on Expo. This
+                  personal safety app is designed to find the safest route to
+                  your destination using the Google Maps API. (Not currently
+                  available for download.)
                   <br />
                   <br />
-                  This personal safety app is designed to find the safest route
-                  to your destination using the Google Maps API.
+                  <img
+                    alt="React Native"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    className="techIcon"
+                  />
+                  <img
+                    alt="Firebase"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                    className="techIcon"
+                  />
+                  <img
+                    alt="Google Maps API"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original-wordmark.svg"
+                    className="techIcon"
+                  />
                 </h3>
-                <br />
-                <img
-                  alt="React Native"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  className="techIcon"
-                />
-                <img
-                  alt="Firebase"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-                  className="techIcon"
-                />
-                <img
-                  alt="Google Maps API"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original-wordmark.svg"
-                  className="techIcon"
-                />
               </div>
             </div>
           </Scene>

@@ -186,6 +186,14 @@ export const BottomBar = styled.div`
 
 export const Nav = styled.div`
   padding: 0 15px 0 0;
+
+    @media screen and (max-width: 820px) {
+      margin-top: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
 `;
 
 export const ProjList = styled.li`

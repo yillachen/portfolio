@@ -42,7 +42,7 @@ const Hearth: React.FunctionComponent<IPage> = (props) => {
             triggerHook={0.5}
             offset={125}
           >
-            <div className="heroProj" style={{ textAlign: "center" }}>
+            <div className="heroProj">
               <div>
                 <h3>
                   Hearth is an full-stack e-commerce application built with
