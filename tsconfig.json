@@ -16,5 +16,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "src/index.tsx", "src/components/App.tsx", "public"]
+  "include": ["_site/src", "_site/src/index.tsx", "_site/src/components/App.tsx", "_site/public"]
 }
