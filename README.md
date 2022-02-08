@@ -1,6 +1,7 @@
 # yillachen.com
 
-A portfolio page to include coding projects. This code is free to use as inspiration, please leave credit if you'd like to use this repository.
+A portfolio page to include coding projects. Currently waiting for domain name xfer.
+This code is free to use as inspiration, please leave credit if you'd like to use this repository.
 
 To get started:
 
