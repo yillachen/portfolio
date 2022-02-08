@@ -92,6 +92,7 @@ export const List = styled.ul`
   line-height: 150%;
   width: 50vh;
   padding: 0;
+  margin-top: 0;
 `;
 
 export const Desc = styled.div`
