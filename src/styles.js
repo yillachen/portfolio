@@ -72,17 +72,17 @@ export const Main = styled.div`
 `;
 
 export const Body = styled.div`
-  height: 76vh;
+  height: 70vh;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0 15px 0 0;
 
   @media screen and (max-width: 820px) {
-    height: 78vh;
+    height: 70vh;
   }
 
   @media screen and (max-width: 768px) {
-    height: 78vh;
+    height: 73vh;
   }
 `;
 
@@ -92,6 +92,28 @@ export const ProjectMain = styled.div`
   align-items: space-evenly;
   justify-content: space-evenly;
 `;
+
+export const Project = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  margin: 15px 0 15px 0;
+  transition: 0.5s;
+  color: #0f1433;
+
+  @media screen and (max-width: 820px) {
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+  }
+`
 
 export const AboutFlex = styled.div`
   display: flex;
@@ -115,7 +137,7 @@ export const List = styled.ul`
   margin-top: 0;
 
       @media screen and (max-width: 820px) {
-        width: 25vH;
+        width: 40vH;
       }
 
       @media (max-width: 768px) {
@@ -158,8 +180,7 @@ export const Header = styled.div`
   @media screen and (max-width: 768px) {
     padding: 10px 0 10px 0;
     height: 10vH;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
   }
 `;
 

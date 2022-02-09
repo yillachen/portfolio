@@ -12,7 +12,7 @@ const Hearth: React.FunctionComponent<IPage> = (props) => {
 
   useEffect(() => {
     const delay = () => {
-      setTimeout(() => setLoading(false), 2600);
+      setTimeout(() => setLoading(false), 2000);
     };
     delay();
     return () => console.log("Unmounting...");

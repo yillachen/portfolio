@@ -1,14 +1,14 @@
 import React from "react";
 import { Player } from '@lottiefiles/react-lottie-player';
-import loader from "./loader.json";
+import swimming from './swimming.json'
 
 export default function PageLoader() {
   return (
-    <div style={{top: '65%'}}>
+    <div style={{marginTop: '10%'}}>
       <Player
         autoplay
         loop
-        src={loader}
+        src={swimming}
         style={{ height: "300px", width: "300px" }}
       >
       </Player>

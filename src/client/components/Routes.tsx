@@ -11,6 +11,7 @@ import Gradient from "./bg";
 import { Body } from "../../styles";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../../config/transition";
+import Footer from "./Footer";
 
 const Routes: React.FunctionComponent<{}> = (props) => {
   return (
@@ -45,7 +46,8 @@ const Routes: React.FunctionComponent<{}> = (props) => {
             </Switch>
           </AnimatePresence>
         </Body>
-        <h3 style={{color: '#0F1433', textAlign: 'center', fontSize: 12, marginTop: 15}}>&copy; Designed with &hearts; by me, 2022</h3>
+        <Footer name={"Footer"} />
+        {/* <h3 style={{color: '#0F1433', fontSize: 12, marginTop: 15}}>&copy; Designed with &hearts; by me, 2022</h3> */}
       </motion.div>
       <Gradient />
     </BrowserRouter>

@@ -37,36 +37,6 @@ const Navbar: React.FunctionComponent<IPage> = (props) => {
                 Projects
               </NavLink>
             </Nav>
-            <>
-              <Nav>
-                <a
-                  href="https://linkedin.com/in/yilla-chen"
-                  className="nav"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    alt="LinkedIn"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-                    style={{ width: 25 }}
-                  />
-                </a>
-              </Nav>
-              <Nav>
-                <a
-                  href="https://github.com/yillachen"
-                  target="_blank"
-                  className="nav"
-                  rel="noreferrer"
-                >
-                  <img
-                    alt="GitHub"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    style={{ width: 25 }}
-                  />
-                </a>
-              </Nav>
-            </>
           </Column>
         </Header>
       </AnimatePresence>

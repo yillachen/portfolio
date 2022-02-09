@@ -29,4 +29,36 @@ const springTransition = {
   stiffness: 40
 };
 
-export { fadeVariant, fadeTransition, springTransition, springVariant};
+const bSpringVariant = {
+  in: {
+    opacity: 1,
+    y: 0
+  },
+  out: {
+    opacity: 0,
+    y: '100vH'
+  },
+};
+
+const bSpringTransition = {
+  duration: 0.25,
+  type: 'spring',
+  stiffness: 40
+};
+
+const slideVariant = {
+  in: {
+    opacity: 1,
+    x: 0
+  },
+  out: {
+    opacity: 0.5,
+    x: '25vH'
+  },
+};
+
+const slideTransition = {
+  duration: 0.5
+};
+
+export { fadeVariant, fadeTransition, springTransition, springVariant, bSpringTransition, bSpringVariant, slideTransition, slideVariant};
