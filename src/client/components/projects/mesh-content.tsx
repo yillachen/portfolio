@@ -10,9 +10,10 @@ const MeshContent: React.FunctionComponent<IPage> = (props) => {
       <div>
         <div className="heroProj">
           <img
-            style={{ width: "60%", height: "60%", marginBottom: 25 }}
+            className="heroImg"
             src={mesh}
             alt="Mesh"
+            style={{ boxShadow: "none", marginBottom: 25, width: '60%' }}
           />
           <div>
             <h3>

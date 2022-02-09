@@ -273,8 +273,7 @@ h4 {
     font-size: 14px;
   }
   .heroImg {
-    width: 75%;
-    height: 75%;
+    width: 95% !important;
   }
   .heroProj {
     display: flex;
