@@ -55,19 +55,34 @@ export const Colors = {
 const { navy } = Colors;
 
 export const Main = styled.div`
-  margin: 0 50px 0 50px;
+  margin: 0 35px 35px 35px;
   font-size: 18px;
   background-color: transparent;
   overflow: hidden;
 
   @media screen and (max-width: 820px) {
-    margin: 0 50px 0 50px;
+    margin: 0 50px 25px 50px;
     overflow: hidden;
   }
 
   @media (max-width: 768px) {
-    margin: 0 25px 0 25px;
+    margin: 0 15px 15px 15px;
     overflow: hidden;
+  }
+`;
+
+export const Body = styled.div`
+  height: 76vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0 15px 0 0;
+
+  @media screen and (max-width: 820px) {
+    height: 78vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 78vh;
   }
 `;
 
@@ -98,6 +113,14 @@ export const List = styled.ul`
   width: 50vh;
   padding: 0;
   margin-top: 0;
+
+      @media screen and (max-width: 820px) {
+        width: 25vH;
+      }
+
+      @media (max-width: 768px) {
+        width: 18.5vH;
+      }
 `;
 
 export const Desc = styled.div`
@@ -137,21 +160,6 @@ export const Header = styled.div`
     height: 10vH;
     justify-content: center;
     flex-direction: column;
-  }
-`;
-
-export const Body = styled.div`
-  height: 77vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 0 15px 0 0;
-
-  @media screen and (max-width: 820px) {
-    height: 80vh;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 80vh;
   }
 `;
 

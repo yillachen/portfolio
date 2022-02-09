@@ -45,7 +45,7 @@ const Routes: React.FunctionComponent<{}> = (props) => {
             </Switch>
           </AnimatePresence>
         </Body>
-        <h3 style={{color: '#0F1433', textAlign: 'center', fontSize: 12}}>&copy; Designed with &hearts; by me, 2022</h3>
+        <h3 style={{color: '#0F1433', textAlign: 'center', fontSize: 12, marginTop: 15}}>&copy; Designed with &hearts; by me, 2022</h3>
       </motion.div>
       <Gradient />
     </BrowserRouter>
