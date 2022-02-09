@@ -17,13 +17,13 @@ const Projects: React.FunctionComponent<IPage> = (props) => {
       <ProjectMain>
         <Link to="/projects/mesh">
           <div className="project">
-            <h2 className="projectTitle">Mesh</h2>
+            <h2 className="hover-underline-animation">Mesh</h2>
             <h3>Mobile application</h3>
           </div>
         </Link>
         <Link to="/projects/hearth">
           <div className="project">
-            <h2 className="projectTitle">Hearth</h2>
+            <h2 className="hover-underline-animation">Hearth</h2>
             <h3>E-commerce website</h3>
           </div>
         </Link>

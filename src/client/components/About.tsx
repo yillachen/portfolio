@@ -15,7 +15,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
     >
       <AboutFlex>
         <h2 className="label">About</h2>
-        <Column>
+
           <Desc>
             <h2>
               <span style={{ fontStyle: "italic" }}>Nice to e-meet you!</span>
@@ -42,7 +42,7 @@ const About: React.FunctionComponent<IPage> = (props) => {
               React, Node.js), data structures and algorithms.
             </p>
           </Desc>
-        </Column>
+
       </AboutFlex>
 
       <AboutFlex>

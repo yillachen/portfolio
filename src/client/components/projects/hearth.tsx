@@ -39,7 +39,7 @@ const Hearth: React.FunctionComponent<IPage> = (props) => {
               Hearth is an full-stack e-commerce application built with React,
               Redux, Node.js, Express.js, and PostgreSQL and deployed on Heroku.
               We used MaterialUI and pure CSS to style the website. This mock
-              shopping website offers curated furniture collections targeted to
+              online boutique offers curated furniture collections targeted to
               busy people who want to create a home, but don't know where to
               start.
             </h3>
@@ -102,17 +102,14 @@ const Hearth: React.FunctionComponent<IPage> = (props) => {
             <h3>Key Features Implemented</h3>
             <ProjFlex>
               <ProjList>
-                Authenticated sign up and login components built with MaterialUI
-                and fortified with JWT and bcrypt to protect user passwords and
-                information.
+                Authenticated sign up and login components built with MaterialUI, fortified with JWT & bcrypt to hash user information.
               </ProjList>
               <ProjList>
                 Fully customized user and guest checkout experiences using
-                Express and window.localStorage.
+                Express.js & window.localStorage.
               </ProjList>
               <ProjList>
-                Admin accounts have access to all users in the website database
-                and can create, edit, or delete products.
+                Admin accounts have special permissions to create, edit, or delete products and user accounts.
               </ProjList>
             </ProjFlex>
           </>

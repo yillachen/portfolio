@@ -102,17 +102,15 @@ export const List = styled.ul`
 
 export const Desc = styled.div`
   line-height: 150%;
-  width: 98vh;
+  width: 75%;
   padding: 0;
 
   @media screen and (max-width: 820px) {
     width: 95%;
-    height: 95%;
     overflow: hidden;
   }
   @media screen and (max-width: 768px) {
     width: 95%;
-    height: 95%;
     overflow: hidden;
   }
 `;
@@ -143,7 +141,7 @@ export const Header = styled.div`
 `;
 
 export const Body = styled.div`
-  height: 80vh;
+  height: 77vh;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0 15px 0 0;
@@ -203,7 +201,7 @@ export const Nav = styled.div`
 
 export const ProjList = styled.li`
   display: block;
-  padding: 5px;
+  padding: 5px 8px 15px 8px;
 `;
 
 export const ProjFlex = styled.div`

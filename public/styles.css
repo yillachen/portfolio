@@ -18,13 +18,11 @@ a:visited {
   color: #0f1433;
   text-decoration: none;
   transition: 0.5s;
-  /* border-bottom: 1px solid #0f1433; */
 }
 
 a:hover {
   cursor: crosshair;
   color: #ff4724;
-  /* border-bottom: 1px solid #ff4724; */
 }
 
 h1 {
@@ -141,12 +139,38 @@ h3 > a {
 }
 
 /* Projects */
-.projectTitle {
+.hover-underline-animation {
   font-size: 60px;
   text-transform: uppercase;
   font-style: italic;
   transition: 0.5s;
-  padding: 25px 25px 0 0 !important;
+  margin: 25px 25px 0 0;
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+  position: relative;
+  color: #0f1433;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff4724;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation:hover {
+  color: #ff4724;
 }
 
 .project {
@@ -159,11 +183,6 @@ h3 > a {
   margin: 15px 0 15px 0;
   transition: 0.5s;
   color: #0f1433;
-}
-
-.project:hover > h2,
-.project:hover > h3 {
-  color: #ff4724;
 }
 
 .heroImg {

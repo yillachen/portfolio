@@ -70,21 +70,16 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
           <h3>Key Features Implemented</h3>
           <ProjFlex>
             <ProjList>
-              Plan your safest routes around town with a crime-density heat map
+              Plan your safest routes with a crime-density heat map
               that uses over 300,000 reported incidents via the NYC public
               database.
             </ProjList>
             <ProjList>
               Create trusted groups of contacts, called Safety Nets, who receive
-              your notifications and SOS signals.
+              notifications of your journeys & SOS signals.
             </ProjList>
             <ProjList>
-              Send automatic messages to your Safety Nets when you get home,
-              reach safe-points in your journey, or if something goes wrong.
-            </ProjList>
-            <ProjList>
-              Contribute to Mesh's safety data by filing your own incident
-              reports.
+              Turn on automatic messages to your friends when you arrive at your destination, or when there's an unscheduled pit stop.
             </ProjList>
           </ProjFlex>
         </>
