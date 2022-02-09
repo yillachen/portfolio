@@ -1,14 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import IPage from "../../interface/page";
-import { ProjectMain, Project } from "../../styles";
+import { ProjectMain } from "../../styles";
 import { motion } from "framer-motion";
-import {
-  fadeTransition,
-  fadeVariant,
-  slideTransition,
-  slideVariant,
-} from "../../config/transition";
+import { fadeTransition, fadeVariant } from "../../config/transition";
 import FeaturedHearth from "./projects/featured-hearth";
 import FeaturedMesh from "./projects/featured-mesh";
 
