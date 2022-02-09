@@ -9,11 +9,10 @@ import {
   slideTransition,
   slideVariant,
 } from "../../config/transition";
+import FeaturedHearth from "./projects/featured-hearth";
+import FeaturedMesh from "./projects/featured-mesh";
 
 const Projects: React.FunctionComponent<IPage> = (props) => {
-  const [showMesh, setMesh] = useState(false);
-  const [showHearth, setHearth] = useState(false);
-
   return (
     <motion.div
       animate="in"
@@ -22,54 +21,11 @@ const Projects: React.FunctionComponent<IPage> = (props) => {
       variants={fadeVariant}
       transition={fadeTransition}
     >
+      <br />
+      <h3>Featured Projects</h3>
       <ProjectMain>
-        <Link to="/projects/mesh">
-          <Project
-            onMouseEnter={() => setMesh(true)}
-            onMouseLeave={() => setMesh(false)}
-          >
-            <h2 className="projTitle">Mesh</h2>
-            {showMesh ? (
-              <motion.div
-                animate="in"
-                initial="out"
-                exit="out"
-                variants={slideVariant}
-                transition={slideTransition}
-              >
-                <div className="snippet">
-                  <h4>A personal safety app with heatmap & auto-texts.</h4>
-                </div>
-              </motion.div>
-            ) : (
-              <h3>Mobile Application</h3>
-            )}
-          </Project>
-        </Link>
-        <Link
-          to="/projects/hearth"
-          onMouseEnter={() => setHearth(true)}
-          onMouseLeave={() => setHearth(false)}
-        >
-          <Project>
-            <h2 className="projTitle">Hearth</h2>
-            {showHearth ? (
-              <motion.div
-                animate="in"
-                initial="out"
-                exit="out"
-                variants={slideVariant}
-                transition={slideTransition}
-              >
-                <div className="snippet">
-                  <h4>A mock online boutique built with the PERN stack.</h4>
-                </div>
-              </motion.div>
-            ) : (
-              <h3>E-commerce website</h3>
-            )}
-          </Project>
-        </Link>
+        <FeaturedMesh name={"Featured: Mesh"} />
+        <FeaturedHearth name={"Featured: Hearth"} />
       </ProjectMain>
     </motion.div>
   );
