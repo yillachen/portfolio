@@ -17,7 +17,7 @@
     left: 0;
   }
   h4 {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 
@@ -43,6 +43,7 @@
   a:visited {
     font-size: 14px;
   }
+
   #title,
   #title > a,
   #title > a:visited,
@@ -53,6 +54,10 @@
     text-align: center;
     color: #0f1433;
   }
+  #title > a:hover {
+    color: #ff4724;
+  }
+
   h2,
   h2 > span,
   .label {
@@ -84,16 +89,18 @@
     font-size: 16px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 19px;
     padding: 0;
     text-align: center;
   }
   .snippet {
     width: 90%;
   }
+
   .projTitle {
     font-size: 40px;
   }
+
   .featured {
     transform: none;
     position: relative;

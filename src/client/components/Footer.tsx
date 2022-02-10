@@ -19,7 +19,7 @@ const Footer: React.FunctionComponent<IPage> = (props) => {
             <Nav>
               <a
                 href="https://linkedin.com/in/yilla-chen"
-                className="nav"
+                className="hover-underline"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -34,7 +34,7 @@ const Footer: React.FunctionComponent<IPage> = (props) => {
               <a
                 href="https://github.com/yillachen"
                 target="_blank"
-                className="nav"
+                className="hover-underline"
                 rel="noreferrer"
               >
                 <img

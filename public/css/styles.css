@@ -29,13 +29,13 @@ h1 {
   font-size: 42px;
   font-weight: normal;
   color: #0f1433;
-  font-family: "Tiempos Fine", "Playfair Display", serif;
+  font-family: "Tiempos Fine", "Nanum Myeongjo", serif;
 }
 
 h2,
 h2 > span {
   color: #0f1433;
-  font-family: "Tiempos Fine", "Playfair Display", serif;
+  font-family: "Tiempos Fine", "Nanum Myeongjo", serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 140%;
@@ -107,14 +107,16 @@ h3 > a {
 
 #title > a,
 #title > a:visited {
-  font-family: "Tiempos Fine", "Playfair Display", serif;
+  font-family: "Tiempos Fine", "Nanum Myeongjo", serif;
   font-size: 42px;
   font-weight: normal;
   color: #0f1433;
   text-transform: none;
+  transition: 0.5s;
 }
 
-#title > a:hover {
+#title > a:hover,
+#title:hover {
   color: #ff4724;
 }
 
@@ -160,8 +162,7 @@ h4 {
   font-size: 27px;
   font-style: italic;
   font-weight: normal;
-  letter-spacing: -0.5px;
-  font-family: "Tiempos Fine", "Playfair Display", serif;
+  font-family: "Tiempos Fine", "Nanum Myeongjo", serif;
   margin: 0;
   padding: 0;
   text-align: right;
@@ -176,8 +177,8 @@ h4 {
 
 /* Gradients */
 .greenCircle {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   background-color: #e5ef53;
   position: absolute;
   bottom: 0;
@@ -193,8 +194,8 @@ h4 {
 }
 
 .lavCircle {
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   background-color: #e0deff;
   position: absolute;
   border-radius: 50%;

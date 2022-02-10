@@ -78,11 +78,11 @@ export const Body = styled.div`
   padding: 0 15px 0 0;
 
   @media screen and (max-width: 820px) {
-    height: 75vh;
+    height: 73vh;
   }
 
   @media screen and (max-width: 768px) {
-    height: 75vh;
+    height: 73vh;
   }
 `;
 
@@ -111,6 +111,7 @@ export const Project = styled.div`
   margin: 15px 0 15px 0;
   transition: 0.5s;
   color: #0f1433;
+  height: 15vH;
 
   @media screen and (max-width: 820px) {
     overflow: hidden;
@@ -166,7 +167,7 @@ export const List = styled.ul`
   }
 
   @media (max-width: 768px) {
-    width: 18vh;
+    width: 25vh;
   }
 `;
 
