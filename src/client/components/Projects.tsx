@@ -14,7 +14,6 @@ const Projects: React.FunctionComponent<IPage> = (props) => {
       exit="out"
       variants={fadeVariant}
       transition={fadeTransition}
-      style={{position: 'relative'}}
     >
       <h3 className="featured">Featured Projects</h3>
       <ProjectMain>
