@@ -57,7 +57,7 @@ const { navy } = Colors;
 export const Main = styled.div`
   margin: 35px;
   font-size: 18px;
-  background-color: transparent;
+  background-color: #fff;
   overflow: hidden;
 
   @media screen and (max-width: 820px) {

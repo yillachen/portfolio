@@ -10,7 +10,7 @@ const Mesh: React.FunctionComponent<IPage> = (props) => {
 
   useEffect(() => {
     const delay = () => {
-      setTimeout(() => setLoading(false), 1250);
+      setTimeout(() => setLoading(false), 1500);
     };
     delay();
     return () => console.log("Unmounting...");

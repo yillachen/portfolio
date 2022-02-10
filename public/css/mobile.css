@@ -41,14 +41,14 @@
   a:active,
   a:hover,
   a:visited {
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  #title,
+  h1,
   #title > a,
   #title > a:visited,
   #title > a:hover {
-    font-size: 28px;
+    font-size: 25px;
     margin: 0;
     padding-top: 0;
     text-align: center;
@@ -67,7 +67,7 @@
     padding-bottom: 25px;
   }
   h3 {
-    font-size: 14px;
+    font-size: 15px;
   }
   .heroImg {
     width: 95% !important;
