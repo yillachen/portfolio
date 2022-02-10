@@ -3,7 +3,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { springTransition, springVariant } from "../../config/transition";
 import IPage from "../../interface/page";
-import { Header, Column, Nav } from "../../styles";
+import { Header, Nav } from "../../styles";
 
 const Navbar: React.FunctionComponent<IPage> = (props) => {
   const active = {
@@ -24,20 +24,20 @@ const Navbar: React.FunctionComponent<IPage> = (props) => {
       <AnimatePresence exitBeforeEnter>
         <Header>
           <h1 id="title">
-            <Link to="/">Yilla Chen</Link>
+            <Link to="/" className="hover-underline">Yilla Chen</Link>
           </h1>
-          <Column>
+          <div style={{display: 'flex'}}>
             <Nav>
-              <NavLink to="/about" className="nav" activeStyle={active}>
-                About
+              <NavLink to="/about" className="hover-underline" activeStyle={active}>
+                <h3 className="nav">About</h3>
               </NavLink>
             </Nav>
             <Nav>
-              <NavLink to="/projects" className="nav" activeStyle={active}>
-                Projects
+              <NavLink to="/projects" className="hover-underline" activeStyle={active}>
+                <h3 className="nav">Projects</h3>
               </NavLink>
             </Nav>
-          </Column>
+          </div>
         </Header>
       </AnimatePresence>
     </motion.div>

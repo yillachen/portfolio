@@ -55,18 +55,18 @@ export const Colors = {
 const { navy } = Colors;
 
 export const Main = styled.div`
-  margin: 0 35px 35px 35px;
+  margin: 35px;
   font-size: 18px;
   background-color: transparent;
   overflow: hidden;
 
   @media screen and (max-width: 820px) {
-    margin: 0 50px 25px 50px;
+    margin: 0 75px 25px 50px;
     overflow: hidden;
   }
 
   @media (max-width: 768px) {
-    margin: 0 15px 15px 15px;
+    margin: 0 25px 0 25px;
     overflow: hidden;
   }
 `;
@@ -78,11 +78,11 @@ export const Body = styled.div`
   padding: 0 15px 0 0;
 
   @media screen and (max-width: 820px) {
-    height: 70vh;
+    height: 75vh;
   }
 
   @media screen and (max-width: 768px) {
-    height: 73vh;
+    height: 75vh;
   }
 `;
 
@@ -91,6 +91,15 @@ export const ProjectMain = styled.div`
   flex-direction: column;
   align-items: space-evenly;
   justify-content: space-evenly;
+  margin: 0 0 0 100px;
+
+  @media screen and (max-width: 820px) {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const Project = styled.div`
@@ -113,7 +122,7 @@ export const Project = styled.div`
     flex-direction: column;
     justify-content: center;
   }
-`
+`;
 
 export const AboutFlex = styled.div`
   display: flex;
@@ -127,6 +136,22 @@ export const AboutFlex = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+
+  @media screen and (max-width: 820px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
 `;
 
 export const List = styled.ul`
@@ -136,13 +161,13 @@ export const List = styled.ul`
   padding: 0;
   margin-top: 0;
 
-      @media screen and (max-width: 820px) {
-        width: 40vH;
-      }
+  @media screen and (max-width: 820px) {
+    width: 50vh;
+  }
 
-      @media (max-width: 768px) {
-        width: 20vH;
-      }
+  @media (max-width: 768px) {
+    width: 18vh;
+  }
 `;
 
 export const Desc = styled.div`
@@ -179,7 +204,7 @@ export const Header = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 10px 0 10px 0;
-    height: 10vH;
+    height: 10vh;
     justify-content: space-between;
   }
 `;
@@ -219,13 +244,13 @@ export const BottomBar = styled.div`
 export const Nav = styled.div`
   padding: 0 15px 0 0;
 
-    @media screen and (max-width: 820px) {
-      margin-top: 15px;
-    }
+  @media screen and (max-width: 820px) {
+    margin: 0;
+  }
 
-    @media screen and (max-width: 768px) {
-      margin-top: 15px;
-    }
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 export const ProjList = styled.li`

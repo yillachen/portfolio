@@ -23,7 +23,7 @@ const Projects: React.FunctionComponent<IPage> = (props) => {
             transition={slideTransition}
           >
             <div className="snippet">
-              <h4>A personal safety app with heatmap & auto-texts.</h4>
+              <h4>A personal safety app that texts your contacts when you're en route & renders heatmap data.</h4>
             </div>
           </motion.div>
         ) : (

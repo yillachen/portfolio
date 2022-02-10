@@ -25,7 +25,7 @@ const FeaturedHearth: React.FunctionComponent<IPage> = (props) => {
             transition={slideTransition}
           >
             <div className="snippet">
-              <h4>A mock online boutique built with the PERN stack.</h4>
+              <h4>A mock online boutique built with a custom cart & hashed authentication.</h4>
             </div>
           </motion.div>
         ) : (

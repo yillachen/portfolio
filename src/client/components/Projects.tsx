@@ -15,8 +15,7 @@ const Projects: React.FunctionComponent<IPage> = (props) => {
       variants={fadeVariant}
       transition={fadeTransition}
     >
-      <br />
-      <h3>Featured Projects</h3>
+      <h3 className="featured">Featured Projects</h3>
       <ProjectMain>
         <FeaturedMesh name={"Featured: Mesh"} />
         <FeaturedHearth name={"Featured: Hearth"} />
