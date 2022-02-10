@@ -72,7 +72,7 @@ export const Main = styled.div`
 `;
 
 export const Body = styled.div`
-  height: 70vh;
+  height: 68vh;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0 15px 0 0;
@@ -194,7 +194,7 @@ export const Header = styled.div`
   height: 8vh;
   width: 100%;
   color: ${navy};
-  padding: 25px 0 15px 0;
+  padding: 15px 0 15px 0;
   margin-bottom: 15px;
 
   @media screen and (max-width: 820px) {
@@ -272,3 +272,10 @@ export const ProjFlex = styled.div`
     padding: 10px;
   }
 `;
+
+export const Loader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`

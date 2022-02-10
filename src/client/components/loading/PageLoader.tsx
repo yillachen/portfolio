@@ -1,17 +1,17 @@
 import React from "react";
-import { Player } from '@lottiefiles/react-lottie-player';
-import swimming from './swimming.json'
+import { Player } from "@lottiefiles/react-lottie-player";
+import swimming from "./swimming.json";
+import { Loader } from "../../../styles";
 
 export default function PageLoader() {
   return (
-    <div style={{marginTop: '10%'}}>
+    <Loader>
       <Player
         autoplay
         loop
         src={swimming}
-        style={{ height: "300px", width: "300px" }}
-      >
-      </Player>
-    </div>
+        style={{ height: '50vH' }}
+      ></Player>
+    </Loader>
   );
 }

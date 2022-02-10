@@ -1,10 +1,11 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import swimming from './swimming.json'
+import { Loader } from "../../../styles";
 
 export default function Loading() {
   return (
-    <div style={{ marginTop: "15%"}}>
+    <Loader style={{height: '100vH'}}>
       <Player
         autoplay
         loop
@@ -12,6 +13,6 @@ export default function Loading() {
         style={{ height: '50vH' }}
       >
       </Player>
-    </div>
+    </Loader>
   );
 }

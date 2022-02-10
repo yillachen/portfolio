@@ -122,8 +122,8 @@ h3 > a {
 .featured {
   transform: rotate(-90deg);
   position: absolute;
-  top: 30%;
-  left: -25px;
+  top: 50%;
+  left: -75px;
 }
 
 .projTitle {
