@@ -124,7 +124,7 @@ h3 > a {
   transform: rotate(-90deg);
   position: absolute;
   top: 50%;
-  left: -75px;
+  left: 0;
 }
 
 .projTitle {
