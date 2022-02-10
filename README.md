@@ -3,13 +3,13 @@
 A portfolio page to include coding projects. Currently waiting for domain name xfer.
 This code is free to use as inspiration, please leave credit if you'd like to use this repository.
 
-To get started:
+## Future Ideas
 
-```js
-git clone SSH
-npm install
-npm start
-```
+- [ ] Accessbility feature: for fonts to be bolder/larger
+- [ ] Accessbility feature: audio reading?
+- [ ] Dark/Light Themes
+- [ ] Mobile-friendly CSS background
+- [ ] React Lazy-loading
 
 ## Learn More
 

@@ -6,6 +6,8 @@ node_modules
 /.pnp
 .pnp.js
 package-lock.json
+/src/client/fonts
+/src/client/images
 
 # testing
 /coverage

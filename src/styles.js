@@ -136,20 +136,17 @@ export const AboutFlex = styled.div`
 
 export const Column = styled.div`
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 75%;
 
   @media screen and (max-width: 820px) {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
   }
 
   @media (max-width: 768px) {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
   }
