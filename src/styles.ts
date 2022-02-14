@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import {Basis, Basis2, RobotoMono, RobotoMono2, Tiempos, Tiempos2, TiemposItalic, TiemposItalic2} from '../src/client/fonts/fonts'
+import {Basis, Basis2, RobotoMono, RobotoMono2, Tiempos, Tiempos2, TiemposItalic, TiemposItalic2} from '../src/client/fonts/fonts.js'
 
 export default createGlobalStyle`
   @font-face {
