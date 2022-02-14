@@ -1,37 +1,28 @@
 import styled, { createGlobalStyle } from "styled-components";
-import {Basis, Basis2, RobotoMono, RobotoMono2, Tiempos, Tiempos2, TiemposItalic, TiemposItalic2} from './config/fonts.js'
+import {Basis, Basis2, Tiempos, Tiempos2, TiemposItalic, TiemposItalic2} from './config/fonts.js'
 
 export default createGlobalStyle`
+  @font-face {
+    font-family: 'Tiempos Fine';
+    src: local('Tiempos Fine'), local('Tiempos Fine'),
+    url(${Tiempos2}) format('woff2'),
+    url(${Tiempos}) format('opentype');
+    font-style: normal;
+    font-weight: 300;
+  };
+  @font-face {
+    font-family: 'Tiempos Fine';
+    src: local('Tiempos Fine'), local('Tiempos Fine'),
+    url(${TiemposItalic2}) format('woff2'),
+    url(${TiemposItalic}) format('otf');
+    font-style: italic;
+  };
   @font-face {
     font-family: 'Basis Grotesque';
     src: local('Basis Grotesque'), local('Basis Grotesque'),
     url(${Basis2}) format('woff2'),
     url(${Basis}) format('woff');
     font-style: normal;
-    font-weight: 300;
-  },
-  @font-face {
-    font-family: 'Roboto Mono';
-    src: local('Roboto Mono'), local('Roboto Mono'),
-    url(${RobotoMono2}) format('woff2'),
-    url(${RobotoMono}) format('woff');
-    font-style: normal;
-    font-weight: 300;
-  },
-  @font-face {
-    font-family: 'Tiempos Fine';
-    src: local('Tiempos Fine'), local('Tiempos Fine'),
-    url(${Tiempos2}) format('woff2'),
-    url(${Tiempos}) format('woff');
-    font-style: normal;
-    font-weight: 300;
-  },
-  @font-face {
-    font-family: 'Tiempos Fine';
-    src: local('Tiempos Fine'), local('Tiempos Fine'),
-    url(${TiemposItalic2}) format('woff2'),
-    url(${TiemposItalic}) format('woff');
-    font-style: italic;
     font-weight: 300;
   }
 `;
