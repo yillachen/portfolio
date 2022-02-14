@@ -24,12 +24,12 @@ const About: React.FunctionComponent<IPage> = (props) => {
               My name is Yilla and I'm a motivated, forward-thinking{" "}
               <span style={{ fontStyle: "italic" }}>Full Stack Engineer</span>,
               born and raised in Brooklyn. I'm passionate about creating
-              impactful intuitive applications and moderizing technology so it's
+              impactful intuitive applications and modernizing technology so it's
               accessible for everyone.
             </p>
             <p>
               Before coding, I was a Marketing Manager, focusing on skincare and
-              SaaS. I also love skin science — I'm a licensed esthetician, too —
+              SaaS. I also love skin science — I'm a licensed esthetician —
               and DIY home projects. Currently, I mentor{" "}
               <a
                 href="https://fullstackacademy.com"

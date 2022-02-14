@@ -12,7 +12,7 @@ const HearthContent: React.FunctionComponent<IPage> = (props) => {
         <div className="heroProj">
           <div>
             <h3>
-              Hearth is an full-stack e-commerce application built with React,
+              Hearth is a full-stack e-commerce application built with React,
               Redux, Node.js, Express.js, and PostgreSQL and deployed on Heroku.
               We used MaterialUI and pure CSS to style the website. This mock
               online boutique offers curated furniture collections targeted to
