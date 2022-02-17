@@ -80,8 +80,7 @@
     text-align: center;
   }
   .lavCircle {
-    width: 350px;
-    height: 350px;
+    display: none;
   }
   .greenCircle {
     display: none;
