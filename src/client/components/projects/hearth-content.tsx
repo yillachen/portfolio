@@ -11,14 +11,14 @@ const HearthContent: React.FunctionComponent<IPage> = (props) => {
       <div>
         <div className="heroProj">
           <div>
-            <h3>
-              Hearth is a full-stack e-commerce application built with React,
-              Redux, Node.js, Express.js, and PostgreSQL and deployed on Heroku.
-              We used MaterialUI and pure CSS to style the website. This mock
-              online boutique offers curated furniture collections targeted to
-              busy people who want to create a home, but don't know where to
-              start.
-            </h3>
+            <h3>Hearth is a full-stack e-commerce application</h3>{" "}
+            <p>
+              built with React, Redux, Node.js, Express.js, and PostgreSQL and
+              deployed on Heroku. We used MaterialUI and pure CSS to style the
+              website. This mock online boutique offers curated furniture
+              collections targeted to busy people who want to create a home, but
+              don't know where to start.
+            </p>
             <br />
             <img
               alt="React"

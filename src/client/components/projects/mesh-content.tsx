@@ -13,33 +13,33 @@ const MeshContent: React.FunctionComponent<IPage> = (props) => {
             className="heroImg"
             src={mesh}
             alt="Mesh"
-            style={{ boxShadow: "none", marginBottom: 25, width: '60%' }}
+            style={{ boxShadow: "none", marginBottom: 25, width: "60%" }}
           />
           <div>
-            <h3>
-              Mesh is a mobile application built with React Native connected to
-              a NoSQL database via Firebase, and deployed on Expo. This personal
-              safety app is designed to find the safest route to your
-              destination using the Google Maps API. (Not currently available
-              for download.)
-              <br />
-              <br />
-              <img
-                alt="React Native"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                className="techIcon"
-              />
-              <img
-                alt="Firebase"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-                className="techIcon"
-              />
-              <img
-                alt="Google Maps API"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original-wordmark.svg"
-                className="techIcon"
-              />
-            </h3>
+            <h3>Mesh is a mobile application </h3>
+            <p>
+              built with React Native connected to a NoSQL database via
+              Firebase, and deployed on Expo. This personal safety app is
+              designed to find the safest route to your destination using the
+              Google Maps API. (Not currently available for download.)
+            </p>
+            <br />
+            <br />
+            <img
+              alt="React Native"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              className="techIcon"
+            />
+            <img
+              alt="Firebase"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+              className="techIcon"
+            />
+            <img
+              alt="Google Maps API"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original-wordmark.svg"
+              className="techIcon"
+            />
           </div>
         </div>
         <br />
@@ -61,18 +61,13 @@ const MeshContent: React.FunctionComponent<IPage> = (props) => {
           </ProjFlex>
         </>
       </div>
-      <br />
-      <br />
-      <iframe
-        style={{ boxShadow: "0 0 15px #E0DEFF" }}
-        width="80%"
-        height="420px"
-        src="https://www.youtube.com/embed/iIcVlc-Fi8o"
-        title="YouTube video player"
-        frameBorder="0"
-      ></iframe>
-      <br />
-      <br />
+      <div className="videoWrapper">
+        <iframe
+          title="Mesh Demo Video"
+          src="https://player.vimeo.com/video/678746712?h=3bfd78efaf"
+          frameBorder="0"
+        ></iframe>
+      </div>
       View the code on
       <br />
       <br />

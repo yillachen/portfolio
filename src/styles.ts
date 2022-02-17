@@ -6,7 +6,7 @@ export default createGlobalStyle`
     font-family: 'Tiempos Fine';
     src: local('Tiempos Fine'), local('Tiempos Fine'),
     url(${Tiempos2}) format('woff2'),
-    url(${Tiempos}) format('opentype');
+    url(${Tiempos}) format('woff');
     font-style: normal;
     font-weight: 300;
   };
@@ -14,7 +14,7 @@ export default createGlobalStyle`
     font-family: 'Tiempos Fine';
     src: local('Tiempos Fine'), local('Tiempos Fine'),
     url(${TiemposItalic2}) format('woff2'),
-    url(${TiemposItalic}) format('otf');
+    url(${TiemposItalic}) format('woff');
     font-style: italic;
   };
   @font-face {

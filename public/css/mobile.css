@@ -49,7 +49,7 @@
   #title > a:visited,
   #title > a:hover {
     font-size: 25px;
-    margin: 0;
+    margin: 0 0 15px 0;
     padding-top: 0;
     text-align: center;
     color: #0f1433;
@@ -80,7 +80,8 @@
     text-align: center;
   }
   .lavCircle {
-    display: none;
+    width: 350px;
+    height: 350px;
   }
   .greenCircle {
     display: none;
