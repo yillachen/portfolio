@@ -89,9 +89,8 @@ export const Project = styled.div`
   justify-content: space-between;
   transition: 0.5s;
   color: #0f1433;
-  height: 15vh;
+  height: 20vh;
   border-bottom: 1px solid #4c47a0;
-
   @media screen and (max-width: 820px) {
     overflow: hidden;
     flex-wrap: nowrap;

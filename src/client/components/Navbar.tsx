@@ -7,8 +7,7 @@ import { Header, Nav } from "../../styles";
 
 const Navbar: React.FunctionComponent<IPage> = (props) => {
   const active = {
-    color: "#4c47a0",
-    fontWeight: 'bold'
+    color: "#4c47a0"
   };
 
   return (

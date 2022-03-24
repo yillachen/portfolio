@@ -170,31 +170,23 @@ h3 {
   opacity: 0.5;
   filter: blur(200px);
   animation-name: greenCircle;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 @keyframes greenCircle {
   0% {
-    left: 0;
-    top: 0;
-  }
-  25% {
-    left: 100px;
-    top: 250px;
+    left: 18%;
+    bottom: 10%;
   }
   50% {
-    left: 800px;
-    top: 500px;
-  }
-  75% {
-    left: 400px;
-    top: 750px;
+    left: 22%;
+    bottom: 44%;
   }
   100% {
-    left: 900px;
-    top: 750px;
+    left: 62%;
+    bottom: 82%;
   }
 }
 
@@ -216,7 +208,7 @@ h3 {
 .about-snippet {
   h1 {
     font-size: 25px;
-    padding: 25px 0 25px 0;
+    padding: 15px 0 25px 0;
     font-style: italic;
     line-height: 150%;
   }

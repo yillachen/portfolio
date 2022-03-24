@@ -3,7 +3,6 @@ import GlobalFonts, { Main } from "../../styles";
 import Routes from "./Routes";
 import IPage from "../../interface/page";
 import Loading from "./loading/Loading";
-import Gradient from "./Gradient";
 import "../../css/styles.scss";
 
 const App: React.FunctionComponent<IPage> = (props) => {
@@ -22,13 +21,10 @@ const App: React.FunctionComponent<IPage> = (props) => {
   }
 
   return (
-    <>
-      <Main>
-        <GlobalFonts />
-        <Routes />
-      </Main>
-      <Gradient />
-    </>
+    <Main>
+      <GlobalFonts />
+      <Routes />
+    </Main>
   );
 };
 
