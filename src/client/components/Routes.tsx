@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import routes from "../../config/routes";
 import Navbar from "./Navbar";
-import Gradient from "./bg";
+import Gradient from "./Gradient";
 import { Body } from "../../styles";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../../config/transition";
@@ -48,7 +48,7 @@ const Routes: React.FunctionComponent<{}> = (props) => {
         </Body>
         <Footer name={"Footer"} />
       </motion.div>
-      {/* <Gradient /> */}
+      <Gradient />
     </BrowserRouter>
   );
 };

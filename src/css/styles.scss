@@ -175,65 +175,34 @@ h3 {
   animation-direction: alternate;
 }
 
-.lavCircle {
-  width: 700px;
-  height: 700px;
-  background-color: #e0deff;
-  position: absolute;
-  border-radius: 50%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  filter: blur(200px);
-  animation-name: lavCircle;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
 @keyframes greenCircle {
-  0% {
-    left: 0;
-    bottom: 0;
-  }
-  50% {
-    left: 22%;
-    bottom: 44%;
-  }
-  100% {
-    left: 100%;
-    bottom: 100%;
-  }
-}
-
-@keyframes lavCircle {
   0% {
     right: 0;
     top: 0;
   }
   50% {
-    right: 50%;
-    top: 22%;
+    right: 500px;
+    top: 500px;
   }
   100% {
-    right: 75%;
-    top: 60%;
+    right: 750px;
+    top: 750px;
   }
 }
 
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
-  /* height: 0; */
   margin: 25px 0 50px 0;
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 15px #e0deff;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px #e0deff;
+  }
 }
 
 .about-snippet {
