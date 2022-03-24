@@ -47,9 +47,8 @@ const Routes: React.FunctionComponent<{}> = (props) => {
           </AnimatePresence>
         </Body>
         <Footer name={"Footer"} />
-        {/* <h3 style={{color: '#0F1433', fontSize: 12, marginTop: 15}}>&copy; Designed with &hearts; by me, 2022</h3> */}
       </motion.div>
-      <Gradient />
+      {/* <Gradient /> */}
     </BrowserRouter>
   );
 };

@@ -5,7 +5,8 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.22",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "sass": "^1.49.9"
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.4.1",

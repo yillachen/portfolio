@@ -3,6 +3,7 @@ import GlobalFonts, { Main } from "../../styles";
 import Routes from "./Routes";
 import IPage from "../../interface/page";
 import Loading from "./loading/Loading";
+import '../../css/styles.scss'
 
 const App: React.FunctionComponent<IPage> = (props) => {
   const [loading, setLoading] = useState(true);

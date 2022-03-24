@@ -1,27 +1,20 @@
-* {
+body {
   font-family: "Basis Grotesque", "Helvetica", sans-serif;
   color: #0f1433;
   font-size: 18px;
   line-height: 150%;
+  background-color: #e0deff7c;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-a,
-a:visited {
+a {
   color: #0f1433;
   text-decoration: none;
   transition: 0.5s;
-}
 
-a:hover {
-  cursor: crosshair;
-  color: #ff4724;
+  &:hover {
+    cursor: crosshair;
+    color: #4c47a0;
+  }
 }
 
 h1 {
@@ -29,10 +22,19 @@ h1 {
   font-weight: normal;
   color: #0f1433;
   font-family: "Tiempos Fine", "Playfair Display", serif;
+
+  .title {
+    text-transform: none;
+    transition: 0.5s;
+
+    &:hover {
+      color: #4c47a0;
+      cursor: crosshair;
+    }
+  }
 }
 
-h2,
-h2 > span {
+h2 {
   color: #0f1433;
   font-family: "Tiempos Fine", "Playfair Display", serif;
   font-weight: normal;
@@ -49,84 +51,60 @@ h2 > span {
   display: block;
 }
 
-h3,
-h3 > a {
+h3 {
   font-family: "Roboto Mono", monospace;
-  color: #ff4724;
+  color: #4c47a0;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 180%;
-  margin: 0;
-}
 
-.hover-underline {
-  border-bottom: 3px solid transparent;
-  display: inline-block;
-  position: relative;
-}
-
-.hover-underline:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #ff4724;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.hover-underline:hover {
-  color: #ff4724;
-  cursor: crosshair;
+  &:link {
+    background-color: transparent;
+  }
 }
 
 /* Navbar and Title */
-.nav {
-  font-family: "Roboto Mono", monospace;
-  font-size: 18px;
-  font-weight: normal;
-  color: #0f1433;
-  text-transform: uppercase;
-  display: block;
-  transition: 0.5s;
-}
+.navigation {
+  display: flex;
+  flex-direction: row;
 
-.nav:hover {
-  color: #ff4724;
-}
+  .nav {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    font-weight: normal;
+    color: #0f1433;
+    text-transform: uppercase;
+    display: block;
+    transition: 0.5s;
+    margin: 5px 0 5px 0;
 
-#title > a,
-#title > a:visited {
-  font-family: "Tiempos Fine", "Playfair Display", serif;
-  font-size: 42px;
-  font-weight: normal;
-  color: #0f1433;
-  text-transform: none;
-  transition: 0.5s;
-}
-
-#title > a:hover,
-#title:hover {
-  color: #ff4724;
+    &:hover {
+      color: #4c47a0;
+      text-decoration: none;
+      border-bottom: none;
+    }
+    &:after {
+      content: "";
+      border-bottom: 0.5px solid #4c47a0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #4c47a0;
+      transform: scaleX(1);
+      transition: transform 0.3s ease-in-out;
+      transform-origin: 0% 50%;
+    }
+    &:hover:after,
+    &:focus:after,
+    &:active:after {
+      transform: scaleX(0);
+      transform-origin: 100% 50% 0;
+      width: 100%;
+    }
+  }
 }
 
 /* Projects */
-.featured {
-  transform: rotate(-90deg);
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-
 .projTitle {
   font-size: 60px;
   text-transform: uppercase;
@@ -165,7 +143,7 @@ h4 {
   margin: 0;
   padding: 0;
   text-align: right;
-  color: #ff4724;
+  color: #4c47a0;
 }
 
 .snippet {
