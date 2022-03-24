@@ -63,19 +63,7 @@ export const Main = styled.div`
 
 export const Body = styled.div`
   border-top: 1px solid #4c47a0;
-  padding: 25px 0 0 0;
-  // height: 68vh;
-  // overflow-y: scroll;
-  // overflow-x: hidden;
-  // padding: 0 15px 0 0;
-
-  // @media screen and (max-width: 820px) {
-  //   height: 73vh;
-  // }
-
-  // @media screen and (max-width: 768px) {
-  //   height: 73vh;
-  // }
+  padding-top: 15px;
 `;
 
 export const ProjectMain = styled.div`

@@ -237,8 +237,10 @@ h3 {
 }
 
 .about-snippet {
-  h2 {
-    text-align: center;
-    padding: 25px;
+  h1 {
+    font-size: 25px;
+    padding: 25px 0 25px 0;
+    font-style: italic;
+    line-height: 150%;
   }
 }

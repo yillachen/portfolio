@@ -13,11 +13,7 @@ const AboutSnippet: React.FunctionComponent<IPage> = (props) => {
       transition={fadeTransition}
     >
       <div className="about-snippet">
-        <h2>
-          <span style={{ fontStyle: "italic" }}>
-            Full-stack Developer with a love for UI/UX design.
-          </span>
-        </h2>
+        <h1>Former marketing manager turned full-stack developer, bridging beautiful user experiences with chic design.</h1>
       </div>
     </motion.div>
   );
