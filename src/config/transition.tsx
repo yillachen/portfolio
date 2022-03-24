@@ -53,7 +53,7 @@ const slideVariant = {
   },
   out: {
     opacity: 0.5,
-    x: '25vH'
+    x: '-5vH'
   },
 };
 

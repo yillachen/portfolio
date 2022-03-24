@@ -1,5 +1,12 @@
 import styled, { createGlobalStyle } from "styled-components";
-import {Basis, Basis2, Tiempos, Tiempos2, TiemposItalic, TiemposItalic2} from './config/fonts.js'
+import {
+  Basis,
+  Basis2,
+  Tiempos,
+  Tiempos2,
+  TiemposItalic,
+  TiemposItalic2,
+} from "./config/fonts.js";
 
 export default createGlobalStyle`
   @font-face {
@@ -55,18 +62,8 @@ export const Main = styled.div`
 `;
 
 export const Body = styled.div`
-  height: 68vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 0 15px 0 0;
-
-  @media screen and (max-width: 820px) {
-    height: 73vh;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 73vh;
-  }
+  border-top: 1px solid #4c47a0;
+  padding-top: 15px;
 `;
 
 export const ProjectMain = styled.div`
@@ -74,7 +71,6 @@ export const ProjectMain = styled.div`
   flex-direction: column;
   align-items: space-evenly;
   justify-content: space-evenly;
-  margin: 0 0 0 100px;
 
   @media screen and (max-width: 820px) {
     margin: 0;
@@ -90,11 +86,10 @@ export const Project = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 0;
-  margin: 15px 0 15px 0;
   transition: 0.5s;
   color: #0f1433;
-  height: 15vH;
+  height: 15vh;
+  border-bottom: 1px solid #4c47a0;
 
   @media screen and (max-width: 820px) {
     overflow: hidden;
@@ -105,6 +100,7 @@ export const Project = styled.div`
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
+    height: 250px;
   }
 `;
 
@@ -175,8 +171,7 @@ export const Header = styled.div`
   height: 8vh;
   width: 100%;
   color: ${navy};
-  padding: 15px 0 15px 0;
-  margin-bottom: 15px;
+  padding: 15px 0 25px 0;
 
   @media screen and (max-width: 820px) {
     padding: 25px 0 25px 0;
@@ -259,4 +254,4 @@ export const Loader = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-`
+`;

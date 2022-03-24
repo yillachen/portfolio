@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import routes from "../../config/routes";
 import Navbar from "./Navbar";
-import Gradient from "./bg";
+import Gradient from "./Gradient";
 import { Body } from "../../styles";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../../config/transition";
@@ -47,7 +47,6 @@ const Routes: React.FunctionComponent<{}> = (props) => {
           </AnimatePresence>
         </Body>
         <Footer name={"Footer"} />
-        {/* <h3 style={{color: '#0F1433', fontSize: 12, marginTop: 15}}>&copy; Designed with &hearts; by me, 2022</h3> */}
       </motion.div>
       <Gradient />
     </BrowserRouter>

@@ -7,10 +7,8 @@ import { Header, Nav } from "../../styles";
 
 const Navbar: React.FunctionComponent<IPage> = (props) => {
   const active = {
-    backgroundColor: "#E5EF53",
-    color: "#0F1433",
-    paddingRight: 15,
-    paddingLeft: 15,
+    color: "#4c47a0",
+    fontWeight: 'bold'
   };
 
   return (
@@ -23,17 +21,17 @@ const Navbar: React.FunctionComponent<IPage> = (props) => {
     >
       <AnimatePresence exitBeforeEnter>
         <Header>
-          <h1 id="title">
-            <Link to="/" className="hover-underline">Yilla Chen</Link>
+          <h1 className="title">
+            <Link to="/">Yilla Chen</Link>
           </h1>
-          <div style={{display: 'flex'}}>
+          <div className="navigation">
             <Nav>
-              <NavLink to="/about" className="hover-underline" activeStyle={active}>
+              <NavLink to="/about" activeStyle={active}>
                 <h3 className="nav">About</h3>
               </NavLink>
             </Nav>
             <Nav>
-              <NavLink to="/projects" className="hover-underline" activeStyle={active}>
+              <NavLink to="/projects" activeStyle={active}>
                 <h3 className="nav">Projects</h3>
               </NavLink>
             </Nav>
