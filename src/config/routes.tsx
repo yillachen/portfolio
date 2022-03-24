@@ -3,12 +3,13 @@ import Projects from "../client/components/Projects";
 import IRoute from "../interface/route";
 import Mesh from "../client/components/projects/mesh";
 import Hearth from "../client/components/projects/hearth";
+import Home from "../client/components/Home";
 
 const routes: IRoute[] = [
   {
     path: "/",
-    name: "Projects",
-    component: Projects,
+    name: "Home",
+    component: Home,
     exact: true,
   },
   {

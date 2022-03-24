@@ -10,7 +10,7 @@ export default function PageLoader() {
         autoplay
         loop
         src={swimming}
-        style={{ height: '50vH' }}
+        style={{ height: '25vH' }}
       ></Player>
     </Loader>
   );

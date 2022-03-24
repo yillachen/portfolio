@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../../config/transition";
 import FeaturedHearth from "./projects/featured-hearth";
 import FeaturedMesh from "./projects/featured-mesh";
+import AboutSnippet from "./AboutSnippet";
 
-const Projects: React.FunctionComponent<IPage> = (props) => {
+const Home: React.FunctionComponent<IPage> = (props) => {
   return (
     <motion.div
       animate="in"
@@ -15,6 +16,8 @@ const Projects: React.FunctionComponent<IPage> = (props) => {
       variants={fadeVariant}
       transition={fadeTransition}
     >
+      <AboutSnippet name={"About Snippet"} />
+      <h3 className="featured">Featured Projects</h3>
       <ProjectMain>
         <FeaturedMesh name={"Featured: Mesh"} />
         <FeaturedHearth name={"Featured: Hearth"} />
@@ -23,4 +26,4 @@ const Projects: React.FunctionComponent<IPage> = (props) => {
   );
 };
 
-export default Projects;
+export default Home;

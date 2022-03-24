@@ -10,7 +10,7 @@ const App: React.FunctionComponent<IPage> = (props) => {
 
   useEffect(() => {
     const delay = () => {
-      setTimeout(() => setLoading(false), 2000)
+      setTimeout(() => setLoading(false), 1500)
     }
     delay();
     return () => console.log("Unmounting...");

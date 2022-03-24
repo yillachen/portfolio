@@ -63,6 +63,7 @@ export const Main = styled.div`
 
 export const Body = styled.div`
   border-top: 1px solid #4c47a0;
+  padding: 25px 0 0 0;
   // height: 68vh;
   // overflow-y: scroll;
   // overflow-x: hidden;
@@ -97,11 +98,10 @@ export const Project = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 0;
-  margin: 15px 0 15px 0;
   transition: 0.5s;
   color: #0f1433;
   height: 15vh;
+  border-bottom: 1px solid #4c47a0;
 
   @media screen and (max-width: 820px) {
     overflow: hidden;
@@ -112,6 +112,7 @@ export const Project = styled.div`
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
+    height: 250px;
   }
 `;
 
