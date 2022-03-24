@@ -64,6 +64,7 @@ export const Main = styled.div`
 export const Body = styled.div`
   border-top: 1px solid #4c47a0;
   padding-top: 15px;
+  overflow: hidden;
 `;
 
 export const ProjectMain = styled.div`

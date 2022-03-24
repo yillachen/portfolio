@@ -3,15 +3,16 @@ import GlobalFonts, { Main } from "../../styles";
 import Routes from "./Routes";
 import IPage from "../../interface/page";
 import Loading from "./loading/Loading";
-import '../../css/styles.scss'
+import Gradient from "./Gradient";
+import "../../css/styles.scss";
 
 const App: React.FunctionComponent<IPage> = (props) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const delay = () => {
-      setTimeout(() => setLoading(false), 1500)
-    }
+      setTimeout(() => setLoading(false), 1500);
+    };
     delay();
     return () => console.log("Unmounting...");
   }, []);
@@ -21,10 +22,13 @@ const App: React.FunctionComponent<IPage> = (props) => {
   }
 
   return (
-    <Main>
-      <GlobalFonts />
-      <Routes />
-    </Main>
+    <>
+      <Main>
+        <GlobalFonts />
+        <Routes />
+      </Main>
+      <Gradient />
+    </>
   );
 };
 

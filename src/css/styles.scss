@@ -170,22 +170,30 @@ h3 {
   opacity: 0.5;
   filter: blur(200px);
   animation-name: greenCircle;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 @keyframes greenCircle {
   0% {
-    right: 0;
+    left: 0;
     top: 0;
   }
+  25% {
+    left: 100px;
+    top: 250px;
+  }
   50% {
-    right: 500px;
+    left: 800px;
     top: 500px;
   }
+  75% {
+    left: 400px;
+    top: 750px;
+  }
   100% {
-    right: 750px;
+    left: 900px;
     top: 750px;
   }
 }
