@@ -4,6 +4,10 @@ body {
   font-size: 18px;
   line-height: 150%;
   background-color: #e0deff7c;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 a {
@@ -57,14 +61,17 @@ h2 {
   font-size: 32px;
   line-height: 140%;
   padding: 0;
-  margin-top: 0px;
-}
+  margin: 0px;
 
-.label {
-  padding-bottom: 25px;
-  margin: 0;
-  width: 200px;
-  display: block;
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+
+  &.label {
+    padding-bottom: 20px;
+    width: 200px;
+    display: block;
+  }
 }
 
 h3 {
@@ -285,5 +292,9 @@ h3 {
     padding: 15px 0 25px 0;
     font-style: italic;
     line-height: 150%;
+
+    @media (max-width: 768px) {
+      font-size: 18.5px;
+    }
   }
 }

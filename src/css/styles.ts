@@ -63,8 +63,9 @@ export const Main = styled.div`
 
 export const Body = styled.div`
   border-top: 1px solid #4c47a0;
-  padding-top: 15px;
+  border-bottom: 1px solid #4c47a0;
   overflow: hidden;
+  padding: 15px 0 15px 0;
 
   @media (max-width: 768px) {
     height: 72vH;
@@ -107,7 +108,7 @@ export const Project = styled.div`
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
-    height: 250px;
+    height: 200px;
   }
 `;
 
@@ -115,7 +116,7 @@ export const AboutFlex = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 28px 28px 48px 0;
+  margin: 10px 25px 48px 0;
   width: 100%;
   color: ${navy};
 `;
@@ -186,7 +187,7 @@ export const Header = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 25px 0 25px 0;
+    padding: 20px 0 25px 0;
     height: 8vh;
     justify-content: space-between;
   }
@@ -207,7 +208,6 @@ export const BottomBar = styled.div`
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
   font-size: 14px;
-  border-top: 1px solid #4c47a0;
 
   @media screen and (max-width: 820px) {
     width: 100%;
@@ -218,7 +218,6 @@ export const BottomBar = styled.div`
     width: 100%;
     overflow: hidden;
     align-items: center;
-    margin: 0;
   }
 `;
 
