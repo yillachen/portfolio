@@ -23,9 +23,25 @@ h1 {
   color: #0f1433;
   font-family: "Tiempos Fine", "Playfair Display", serif;
 
-  .title {
+  .mobile-only {
+    display: inline-block;
+    padding-right: 8px;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &.title {
     text-transform: none;
     transition: 0.5s;
+
+    @media (max-width: 768px) {
+      text-align: left;
+      margin: 20px 0 10px 0;
+      font-size: 36px;
+      line-height: 110%;
+    }
 
     &:hover {
       color: #4c47a0;
@@ -173,6 +189,10 @@ h3 {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 @keyframes greenCircle {

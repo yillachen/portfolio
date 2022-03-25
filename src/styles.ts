@@ -56,7 +56,7 @@ export const Main = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin: 0 25px 0 25px;
+    margin: 0 10px 0 10px;
     overflow: hidden;
   }
 `;
@@ -179,8 +179,8 @@ export const Header = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 10px 0 10px 0;
-    height: 10vh;
+    padding: 25px 0 25px 0;
+    height: 8vh;
     justify-content: space-between;
   }
 `;
@@ -209,11 +209,12 @@ export const BottomBar = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0;
+    padding: 25px 0 25px 0;
     width: 95%;
     height: 95%;
     overflow: hidden;
     align-items: center;
+    margin: 0;
   }
 `;
 
