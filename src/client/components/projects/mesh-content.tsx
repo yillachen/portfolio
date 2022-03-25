@@ -68,18 +68,18 @@ const MeshContent: React.FunctionComponent<IPage> = (props) => {
           frameBorder="0"
         ></iframe>
       </div>
-      View the code on
-      <br />
-      <br />
-      <a href="https://git.io/JDgMl" target="_blank" rel="noreferrer">
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-          alt=""
-          className="techIcon"
-        />
-      </a>
-      <br />
-      <br />
+      <div className="view-box">
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+          View the code on<br/><br />
+          <a href="https://git.io/JDgMl" target="_blank" rel="noreferrer">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+              alt=""
+              className="techIcon"
+            />
+          </a>
+        </div>
+      </div>
     </>
   );
 };

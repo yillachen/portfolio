@@ -143,7 +143,7 @@ export const List = styled.ul`
   }
 
   @media (max-width: 768px) {
-    width: 25vh;
+    width: 18vh;
   }
 `;
 

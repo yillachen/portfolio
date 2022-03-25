@@ -59,51 +59,29 @@ const HearthContent: React.FunctionComponent<IPage> = (props) => {
         </div>
         <br />
         <br />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-            alignItems: "flex-start",
-            flexWrap: "wrap",
-          }}
-        >
+        <div className="project-box">
           <img className="heroImg" src={hearth1} alt="Hearth" />
           <img className="heroImg" src={hearth2} alt="Hearth" />
         </div>
-        <br />
-        <br />
         <div className="mx-auto">
-          <>
-            <h3>Key Features Implemented</h3>
-            <ProjFlex>
-              <ProjList>
-                Authenticated sign up and login components built with
-                MaterialUI, fortified with JWT & bcrypt to hash user
-                information.
-              </ProjList>
-              <ProjList>
-                Fully customized user and guest checkout experiences using
-                Express.js & window.localStorage.
-              </ProjList>
-              <ProjList>
-                Admin accounts have special permissions to create, edit, or
-                delete products and user accounts.
-              </ProjList>
-            </ProjFlex>
-          </>
+          <h3>Key Features Implemented</h3>
+          <ProjFlex>
+            <ProjList>
+              Authenticated sign up and login components built with MaterialUI,
+              fortified with JWT & bcrypt to hash user information.
+            </ProjList>
+            <ProjList>
+              Fully customized user and guest checkout experiences using
+              Express.js & window.localStorage.
+            </ProjList>
+            <ProjList>
+              Admin accounts have special permissions to create, edit, or delete
+              products and user accounts.
+            </ProjList>
+          </ProjFlex>
         </div>
       </div>
-      <br />
-      <br />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          alignItems: "flex-start",
-        }}
-      >
+      <div className="view-box">
         <div style={{ display: "flex", flexDirection: "column" }}>
           View the code on
           <br />
@@ -137,10 +115,7 @@ const HearthContent: React.FunctionComponent<IPage> = (props) => {
           </a>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
+
     </>
   );
 };

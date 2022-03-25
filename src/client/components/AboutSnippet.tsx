@@ -13,7 +13,7 @@ const AboutSnippet: React.FunctionComponent<IPage> = (props) => {
       transition={fadeTransition}
     >
       <div className="about-snippet">
-        <h1>Former marketing manager turned full-stack developer, bridging beautiful user experiences with chic design.</h1>
+        <h1>Full-stack Developer and former marketing manager from Brooklyn (Lenape).</h1>
       </div>
     </motion.div>
   );
