@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import GlobalFonts, { Main } from "../../css/styles";
-import Routes from "./Routes";
-import IPage from "../../interface/page";
-import Loading from "./loading/Loading";
-import "../../css/styles.scss";
+import GlobalFonts, { Main } from "../css/styles";
+import Routes from "./components/Routes";
+import IPage from "../interface/page";
+import Loading from "./components/loading/Loading";
+import "../css/styles.scss";
 
 const App: React.FunctionComponent<IPage> = (props) => {
   const [loading, setLoading] = useState(true);
