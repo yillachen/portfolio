@@ -1,6 +1,6 @@
 import React from "react";
 import IPage from "../../../interface/page";
-import { ProjList, ProjFlex } from "../../../styles";
+import { ProjList, ProjFlex } from "../../../css/styles";
 import mesh from "../../images/mesh.gif";
 
 const MeshContent: React.FunctionComponent<IPage> = (props) => {
@@ -9,12 +9,7 @@ const MeshContent: React.FunctionComponent<IPage> = (props) => {
       <h1>Mesh</h1>
       <div>
         <div className="heroProj">
-          <img
-            className="heroImg"
-            src={mesh}
-            alt="Mesh"
-            style={{ boxShadow: "none", marginBottom: 25, width: "60%" }}
-          />
+          <img src={mesh} className="active" alt="Mesh" />
           <div>
             <h3>Mesh is a mobile application </h3>
             <p>
@@ -69,8 +64,10 @@ const MeshContent: React.FunctionComponent<IPage> = (props) => {
         ></iframe>
       </div>
       <div className="view-box">
-        <div style={{display: 'flex', flexDirection: 'column'}}>
-          View the code on<br/><br />
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          View the code on
+          <br />
+          <br />
           <a href="https://git.io/JDgMl" target="_blank" rel="noreferrer">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"

@@ -6,7 +6,7 @@ import {
   Tiempos2,
   TiemposItalic,
   TiemposItalic2,
-} from "./config/fonts.js";
+} from "../config/fonts.js";
 
 export default createGlobalStyle`
   @font-face {
@@ -65,6 +65,12 @@ export const Body = styled.div`
   border-top: 1px solid #4c47a0;
   padding-top: 15px;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: 72vH;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 `;
 
 export const ProjectMain = styled.div`
@@ -90,7 +96,8 @@ export const Project = styled.div`
   transition: 0.5s;
   color: #0f1433;
   height: 20vh;
-  border-bottom: 1px solid #4c47a0;
+  border-top: 1px solid #4c47a0;
+
   @media screen and (max-width: 820px) {
     overflow: hidden;
     flex-wrap: nowrap;
@@ -196,22 +203,19 @@ export const BottomBar = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 8vh;
-  padding: 15px 0 0 0;
-  margin: 15px 0 0 0;
+  padding: 10px 2px 0 2px;
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
   font-size: 14px;
+  border-top: 1px solid #4c47a0;
 
   @media screen and (max-width: 820px) {
-    width: 95%;
-    height: 95%;
+    width: 100%;
     overflow: hidden;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 25px 0 25px 0;
-    width: 95%;
-    height: 95%;
+    width: 100%;
     overflow: hidden;
     align-items: center;
     margin: 0;

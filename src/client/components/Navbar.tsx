@@ -3,7 +3,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { springTransition, springVariant } from "../../config/transition";
 import IPage from "../../interface/page";
-import { Header, Nav } from "../../styles";
+import { Header, Nav } from "../../css/styles";
 
 const Navbar: React.FunctionComponent<IPage> = (props) => {
   const active = {

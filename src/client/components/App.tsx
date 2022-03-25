@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import GlobalFonts, { Main } from "../../styles";
+import GlobalFonts, { Main } from "../../css/styles";
 import Routes from "./Routes";
 import IPage from "../../interface/page";
 import Loading from "./loading/Loading";

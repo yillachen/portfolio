@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import routes from "../../config/routes";
 import Navbar from "./Navbar";
-import { Body } from "../../styles";
+import { Body } from "../../css/styles";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeTransition, fadeVariant } from "../../config/transition";
 import Footer from "./Footer";

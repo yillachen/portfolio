@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import IPage from "../../../interface/page";
-import { Project } from "../../../styles";
+import { Project } from "../../../css/styles";
 import { motion } from "framer-motion";
 import { slideTransition, slideVariant } from "../../../config/transition";
 

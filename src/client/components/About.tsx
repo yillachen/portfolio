@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import IPage from "../../interface/page";
-import { AboutFlex, Column, List, Desc } from "../../styles";
+import { AboutFlex, Column, List, Desc } from "../../css/styles";
 import { fadeTransition, fadeVariant } from "../../config/transition";
 
 const About: React.FunctionComponent<IPage> = (props) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import IPage from "../../../interface/page";
-import { ProjList, ProjFlex } from "../../../styles";
+import { ProjList, ProjFlex } from "../../../css/styles";
 import hearth1 from "../../images/hearth-1.png";
 import hearth2 from "../../images/hearth-2.png";
 
@@ -60,8 +60,8 @@ const HearthContent: React.FunctionComponent<IPage> = (props) => {
         <br />
         <br />
         <div className="project-box">
-          <img className="heroImg" src={hearth1} alt="Hearth" />
-          <img className="heroImg" src={hearth2} alt="Hearth" />
+          <img className="active" src={hearth1} alt="Hearth" />
+          <img className="active" src={hearth2} alt="Hearth" />
         </div>
         <div className="mx-auto">
           <h3>Key Features Implemented</h3>
