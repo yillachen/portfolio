@@ -264,7 +264,7 @@ h3 {
   bottom: 0;
   left: 0;
   border-radius: 50%;
-  z-index: -1;
+  z-index: -0.25;
   opacity: 1;
   filter: blur(200px);
 
@@ -292,7 +292,7 @@ h3 {
   }
 
   50% {
-    left: 150px;
+    left: 88px;
     bottom: 250px;
 
     @media (min-width: 768px) {
@@ -302,7 +302,7 @@ h3 {
   }
 
   100% {
-    left: 150px;
+    left: 88px;
     bottom: 150px;
 
     @media (min-width: 768px) {
