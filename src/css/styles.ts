@@ -68,7 +68,7 @@ export const Body = styled.div`
   padding: 15px 0 15px 0;
 
   @media (max-width: 768px) {
-    height: 72vH;
+    height: 72vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -236,6 +236,11 @@ export const Nav = styled.div`
 export const ProjList = styled.li`
   display: block;
   padding: 5px 8px 15px 8px;
+  width: 33%;
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
 `;
 
 export const ProjFlex = styled.div`
