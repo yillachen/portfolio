@@ -63,12 +63,14 @@ export const Body = styled.div`
   border-top: 1px solid #4c47a0;
   border-bottom: 1px solid #4c47a0;
   height: 72vh;
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
   padding: 15px 0 15px 0;
 
   @media (min-width: 768px) {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 72vh;
   }
 `;
 
@@ -195,9 +197,11 @@ export const ProjFlex = styled.div`
   display: flex;
   padding: 10px;
   justify-content: center;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     padding: 25px;
+    flex-wrap: nowrap;
   }
 `;
 

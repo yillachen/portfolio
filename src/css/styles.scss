@@ -282,18 +282,33 @@ h3 {
 
 @keyframes greenCircle {
   0% {
-    left: 18%;
-    bottom: 10%;
+    left: 0px;
+    bottom: 250px;
+
+    @media (min-width: 768px) {
+      left: 18%;
+      bottom: 10%;
+    }
   }
 
   50% {
-    left: 22%;
-    bottom: 44%;
+    left: 150px;
+    bottom: 250px;
+
+    @media (min-width: 768px) {
+      left: 22%;
+      bottom: 44%;
+    }
   }
 
   100% {
-    left: 62%;
-    bottom: 82%;
+    left: 150px;
+    bottom: 150px;
+
+    @media (min-width: 768px) {
+      left: 62%;
+      bottom: 82%;
+    }
   }
 }
 
