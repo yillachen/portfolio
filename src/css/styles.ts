@@ -63,7 +63,7 @@ export const Body = styled.div`
   background-color: transparent;
   border-top: 1px solid #4c47a0;
   border-bottom: 1px solid #4c47a0;
-  height: 72vh;
+  height: 70vh;
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 15px 0 15px 0;
