@@ -1,12 +1,12 @@
 body {
   font-family: "Basis Grotesque", "Helvetica", sans-serif;
   color: #0f1433;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
   background-color: #e0deff7c;
 
-  @media (max-width: 768px) {
-    font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
 }
 
@@ -38,29 +38,31 @@ a {
 }
 
 h1 {
-  font-size: 42px;
   font-weight: normal;
   color: #0f1433;
   font-family: "Tiempos Fine", "Playfair Display", serif;
 
   .mobile-only {
-    display: inline-block;
+    display: block;
     padding-right: 8px;
 
-    @media (max-width: 425px) {
-      display: block;
+    @media (min-width: 425px) {
+      display: inline-block;
     }
   }
 
   &.title {
     text-transform: none;
     transition: 0.5s;
+    text-align: left;
+    margin: 20px 0 10px 0;
+    font-size: 36px;
+    line-height: 110%;
 
-    @media (max-width: 768px) {
-      text-align: left;
-      margin: 20px 0 10px 0;
-      font-size: 36px;
-      line-height: 110%;
+    @media (min-width: 768px) {
+      text-transform: none;
+      transition: 0.5s;
+      font-size: 42px;
     }
 
     &:hover {
@@ -73,13 +75,13 @@ h2 {
   color: #0f1433;
   font-family: "Tiempos Fine", "Playfair Display", serif;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 140%;
   padding: 0;
   margin: 0px;
 
-  @media (max-width: 768px) {
-    font-size: 25px;
+  @media (min-width: 768px) {
+    font-size: 32px;
   }
 
   &.label {
@@ -149,36 +151,36 @@ h3 {
 
 /* Projects */
 .projTitle {
-  font-size: 60px;
+  font-size: 42px;
   text-transform: uppercase;
   font-style: italic;
   margin: 25px 25px 0 0;
   color: #0f1433;
 
-  @media (max-width: 768px) {
-    font-size: 42px;
+  @media (min-width: 768px) {
+    font-size: 60px;
   }
 }
 
 .project-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 0 0 25px 0;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 
   .active {
-    width: 45%;
+    width: 99%;
     margin: 5px;
     box-shadow: 0 0 15px #e0deff;
 
-    @media (max-width: 768px) {
-      width: 99%;
+    @media (min-width: 768px) {
+      width: 45%;
     }
   }
 }
@@ -195,21 +197,21 @@ h3 {
   text-align: center;
 
   .active {
-    width: 60%;
+    width: 99%;
     margin: 5px;
 
-    @media (max-width: 768px) {
-      width: 99%;
+    @media (min-width: 768px) {
+      width: 60%;
     }
   }
 
   .techIcon {
-    width: 35px;
+    width: 50px;
     height: 35px;
     padding: 0 10px 0 0;
 
-    @media (max-width: 768px) {
-      width: 50px;
+    @media (min-width: 768px) {
+      width: 35px;
     }
   }
 }
@@ -226,27 +228,27 @@ h3 {
 
 /* Projects Title */
 .snippet {
-  width: 100%;
+  width: 90%;
   padding: 0 25px 0 25px;
 
-  @media (max-width: 768px) {
-    width: 90%;
+  @media (min-width: 768px) {
+    width: 100%;
   }
 
   h4 {
-    font-size: 27px;
+    font-size: 21px;
     font-style: italic;
     font-weight: normal;
     font-family: "Tiempos Fine", "Playfair Display", serif;
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: center;
     line-height: 130%;
     color: #4c47a0;
 
-    @media (max-width: 768px) {
-      font-size: 21px;
-      text-align: center;
+    @media (min-width: 768px) {
+      font-size: 27px;
+      text-align: left;
     }
   }
 }
@@ -268,9 +270,9 @@ h3 {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 
-  @media (max-width: 768px) {
-    display: none;
-  }
+  // @media (max-width: 768px) {
+  //   display: none;
+  // }
 }
 
 @keyframes greenCircle {
@@ -305,13 +307,13 @@ h3 {
 
 .about-snippet {
   h1 {
-    font-size: 25px;
+    font-size: 18.5px;
     padding: 15px 0 25px 0;
     font-style: italic;
     line-height: 150%;
 
-    @media (max-width: 768px) {
-      font-size: 18.5px;
+    @media (min-width: 768px) {
+      font-size: 25px;
     }
   }
 }
