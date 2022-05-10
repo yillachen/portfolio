@@ -45,32 +45,30 @@ export const Colors = {
 const { navy } = Colors;
 
 export const Main = styled.div`
-  margin: 35px;
+  margin: 0 10px 0 10px;
   font-size: 18px;
   background-color: transparent;
-  overflow: hidden;
+  overflow-x: hidden;
 
-  @media screen and (max-width: 820px) {
-    margin: 0 75px 25px 50px;
-    overflow: hidden;
+  @media (min-width: 768px) {
+    margin: 35px;
   }
 
-  @media (max-width: 768px) {
-    margin: 0 10px 0 10px;
-    overflow: hidden;
+  @media screen and (min-width: 820px) {
+    margin: 0 75px 25px 50px;
   }
 `;
 
 export const Body = styled.div`
   border-top: 1px solid #4c47a0;
   border-bottom: 1px solid #4c47a0;
-  overflow: hidden;
+  height: 72vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding: 15px 0 15px 0;
 
-  @media (max-width: 768px) {
-    height: 72vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  @media (min-width: 768px) {
+    overflow: hidden;
   }
 `;
 
@@ -79,36 +77,26 @@ export const ProjectMain = styled.div`
   flex-direction: column;
   align-items: space-evenly;
   justify-content: space-evenly;
-
-  @media screen and (max-width: 820px) {
-    margin: 0;
-  }
-
-  @media (max-width: 768px) {
-    margin: 0;
-  }
+  margin: 0;
 `;
 
 export const Project = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   transition: 0.5s;
   color: #0f1433;
   height: 20vh;
   border-top: 1px solid #4c47a0;
 
-  @media screen and (max-width: 820px) {
-    overflow: hidden;
-    flex-wrap: nowrap;
-  }
+  overflow: hidden;
+  justify-content: center;
+  height: 200px;
 
-  @media (max-width: 768px) {
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
@@ -124,72 +112,51 @@ export const AboutFlex = styled.div`
 export const Column = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 100%;
 
-  @media screen and (max-width: 820px) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  @media screen and (min-width: 820px) {
+    width: 75%;
   }
 `;
 
 export const List = styled.ul`
   list-style: none;
   line-height: 150%;
-  width: 50vh;
+  width: 18vh;
   padding: 0;
   margin-top: 0;
 
-  @media screen and (max-width: 820px) {
+  @media (min-width: 768px) {
     width: 50vh;
-  }
-
-  @media (max-width: 768px) {
-    width: 18vh;
   }
 `;
 
 export const Desc = styled.div`
   line-height: 150%;
-  width: 75%;
+  width: 95%;
   padding: 0;
 
-  @media screen and (max-width: 820px) {
-    width: 95%;
-    overflow: hidden;
-  }
-  @media screen and (max-width: 768px) {
-    width: 95%;
+  @media screen and (min-width: 768px) {
+    width: 75%;
     overflow: hidden;
   }
 `;
 
 export const Header = styled.div`
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  height: 8vh;
   width: 100%;
   color: ${navy};
-  padding: 15px 0 25px 0;
+  padding: 20px 0 25px 0;
+  height: 8vh;
+  justify-content: space-between;
 
-  @media screen and (max-width: 820px) {
-    padding: 25px 0 25px 0;
-    overflow: hidden;
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 20px 0 25px 0;
+  @media screen and (min-width: 768px) {
+    padding: 15px 0 25px 0;
     height: 8vh;
-    justify-content: space-between;
+    overflow: hidden;
   }
 `;
 
@@ -208,53 +175,29 @@ export const BottomBar = styled.div`
   font-family: "Roboto Mono", monospace;
   text-transform: uppercase;
   font-size: 14px;
-
-  @media screen and (max-width: 820px) {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    overflow: hidden;
-    align-items: center;
-  }
 `;
 
 export const Nav = styled.div`
   padding: 0 15px 0 0;
-
-  @media screen and (max-width: 820px) {
-    margin: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin: 0;
-  }
 `;
 
 export const ProjList = styled.li`
   display: block;
   padding: 5px 8px 15px 8px;
-  width: 33%;
+  width: 100%;
 
-  @media screen and (max-width: 820px) {
-    width: 100%;
+  @media screen and (min-width: 820px) {
+    width: 33%;
   }
 `;
 
 export const ProjFlex = styled.div`
   display: flex;
-  padding: 25px;
+  padding: 10px;
   justify-content: center;
 
-  @media screen and (max-width: 820px) {
-    padding: 10px;
-    flex-wrap: wrap;
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 10px;
+  @media screen and (min-width: 768px) {
+    padding: 25px;
   }
 `;
 
